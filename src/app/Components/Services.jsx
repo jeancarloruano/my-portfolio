@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import getConfig from '../../../next.config';
 
 const h3ClassName = "text-2xl py-2 mt-20 dark:text-white"
 const p1ClassName = "text-md py-5 leading-8 text-gray-800 dark:text-gray-200"
@@ -6,6 +7,7 @@ const spanClassName = "text-teal-500 font-bold"
 const h4ClassName = "py-4 text-teal-600"
 const pIpsumClassName = "text-gray-800 py-1 dark:text-gray-200"
 const serviceCardClassName = "bg-gray-100 grid place-items-center text-center shadow-md shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-700 dark:shadow-lg dark:shadow-gray-950"
+const BASE_PATH = getConfig.basePath;
 
 export default function Services() {
   return (
@@ -27,7 +29,7 @@ export default function Services() {
       <div className="lg:flex gap-5">
         <div className={serviceCardClassName}>
             <Image
-            src="/placeholder.png"
+            src={BASE_PATH + "/placeholder.png"}
             alt="Under construction image"
             width={100}
             height={100}
@@ -44,7 +46,7 @@ export default function Services() {
         </div>
         <div className={serviceCardClassName}>
             <Image
-            src="/placeholder.png"
+            src={BASE_PATH + "/placeholder.png"}
             alt="Under construction image"
             width={100}
             height={100}
@@ -61,7 +63,7 @@ export default function Services() {
         </div>
         <div className={serviceCardClassName}>
             <Image
-            src="/placeholder.png"
+            src={BASE_PATH + "/placeholder.png"}
             alt="Under construction image"
             width={100}
             height={100}

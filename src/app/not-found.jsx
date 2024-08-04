@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from 'next/image';
+import getConfig from '../../next.config';
 
 const h3ClassName = "text-2xl py-2 md:text-3xl dark:text-white";
 const imageContainerClassName = "relative mx-auto bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full w-60 h-60 overflow-hidden border-gray-600 border-4 shadow-md shadow-gray-400 dark:border-gray-400 dark:shadow-lg dark:shadow-gray-950";
 const pClassName = "text-md py-4 text-gray-800 md:text-xl dark:text-gray-200";
+const BASE_PATH = getConfig.basePath;
 
 export default function NotFound() {
     return (
@@ -17,7 +19,7 @@ export default function NotFound() {
             <div className={imageContainerClassName}>
                 <Image className="mt-1" fill
                     style={{objectFit:"cover"}}
-                    src="/author-404.png"
+                    src={BASE_PATH + "/author-404.png"}
                     alt="404 Memoji image of the author"
                     priority
                 />    

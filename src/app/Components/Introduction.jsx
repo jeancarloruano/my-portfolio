@@ -1,6 +1,7 @@
 "use client"
 import {BsFileEarmarkPersonFill, BsLinkedin, BsGithub, BsMailbox2} from 'react-icons/bs'
 import Image from 'next/image'
+import getConfig from '../../../next.config';
 
 const divBodyClassName = "text-center p10"
 const h2ClassName = "text-5xl py-2 text-cyan-500 font-medium md:text-6xl lg:text-7xl"
@@ -10,6 +11,7 @@ const logoContainerClassName = "text-4xl flex justify-center gap-16 py-3 text-gr
 const logoClassName = "transition duration-100 ease-in-out hover:text-cyan-500 hover:scale-105"
 const imageContainerClassName = "relative mx-auto bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 border-gray-600 border-4 shadow-md shadow-gray-400 dark:border-gray-400 dark:shadow-lg dark:shadow-gray-950"
 const links = ["https://www.linkedin.com/in/jeancarloruano/", "https://github.com/jeancarloruano", "resume"]
+const BASE_PATH = getConfig.basePath;
 
 export default function Introduction({contactFormRef}) {
   return (
@@ -30,7 +32,7 @@ export default function Introduction({contactFormRef}) {
       <div className={imageContainerClassName}>
         <Image className="mt-1" fill
           style={{objectFit:"cover"}}
-          src="/author.png"
+          src={BASE_PATH + "/author.png"}
           alt="Memoji image of the author"
           priority
         />    

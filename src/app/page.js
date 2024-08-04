@@ -11,8 +11,8 @@ import ScrollToTopButton from './Components/ScrollToTopButton'
 export default function Home() {
   const contactFormRef = useRef()
   return (
-    <div class="page">
-      <div class="page-inner" className='relative h-screen overflow-auto'>
+    <div>
+      <div className='relative h-screen overflow-auto'>
         <ScrollToTopButton />
         <NavBar />
         <Introduction contactFormRef={contactFormRef} />
