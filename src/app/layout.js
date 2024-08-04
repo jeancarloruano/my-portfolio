@@ -2,7 +2,7 @@ import './globals.css'
 import Providers from './providers.js'
 
 export const metadata = {
-  title: "Projects by Jeancarlo",
+  title: "My Portfolio",
   description: "Portfolio demo website.",
 }
 

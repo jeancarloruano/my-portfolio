@@ -12,7 +12,7 @@ export default function NotFound() {
                 404 | Page Not Found
             </h3>
             <p className={pClassName}>
-                We couldn't find the page you were looking for.
+                We couldn&apos;t find the page you were looking for.
             </p>
             <div className={imageContainerClassName}>
                 <Image className="mt-1" fill
@@ -23,7 +23,7 @@ export default function NotFound() {
                 />    
             </div>
             <p className={pClassName}>
-                Let's take you back <Link href="/" className="text-teal-500 font-bold transform transition-transform duration-300 hover:text-white hover:scale-105">home</Link>.
+                Let&apos;s take you back <Link href="/" className="text-teal-500 font-bold transform transition-transform duration-300 hover:text-white hover:scale-105">home</Link>.
             </p>
         </main>
     )
