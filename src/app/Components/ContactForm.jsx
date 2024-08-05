@@ -14,7 +14,7 @@ const ContactForm = forwardRef((props, ref) => {
             </div>
             <div className={imageContainerClassName}>
                 <Image
-                    src={BASE_PATH + "/author-contact-memoji.png"}
+                    src={BASE_PATH + "/author-contact-memoji.PNG"}
                     alt="Memoji image of the author"
                     width={320}
                     height={320}

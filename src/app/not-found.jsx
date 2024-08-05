@@ -19,7 +19,7 @@ export default function NotFound() {
             <div className={imageContainerClassName}>
                 <Image className="mt-1" fill
                     style={{objectFit:"cover"}}
-                    src={BASE_PATH + "/author-404-memoji.png"}
+                    src={BASE_PATH + "/author-404-memoji.PNG"}
                     alt="404 Memoji image of the author"
                     priority
                 />    
