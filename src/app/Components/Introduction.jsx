@@ -1,4 +1,4 @@
-"use client"
+//"use client"
 import {BsFileEarmarkPersonFill, BsLinkedin, BsGithub, BsMailbox2} from 'react-icons/bs'
 import Image from 'next/image'
 import getConfig from '../../../next.config';

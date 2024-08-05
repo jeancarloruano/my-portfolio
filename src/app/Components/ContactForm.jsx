@@ -1,4 +1,4 @@
-"use client"
+//"use client"
 import { forwardRef } from "react"
 import Image from 'next/image';
 import getConfig from '../../../next.config';
@@ -17,8 +17,8 @@ const ContactForm = forwardRef((props, ref) => {
                     <Image
                         src={BASE_PATH + "/author-contact-memoji.PNG"}
                         alt="Memoji image of the author"
-                        width={320}
-                        height={320}
+                        fill
+                        style={{ objectFit: "contain" }}
                         priority
                     />
                 </div>
