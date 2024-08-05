@@ -35,7 +35,7 @@ export default function Services() {
             height={100}
             priority
             />
-            <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Lorem ipsum</h3>
+            <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Web Development</h3>
             <p className="py-2 dark:text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -52,7 +52,7 @@ export default function Services() {
             height={100}
             priority
             />
-            <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Lorem ipsum</h3>
+            <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Programming</h3>
             <p className="py-2 dark:text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -69,7 +69,7 @@ export default function Services() {
             height={100}
             priority
             />
-            <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Lorem ipsum</h3>
+            <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Automation</h3>
             <p className="py-2 dark:text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>

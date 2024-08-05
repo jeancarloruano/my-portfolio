@@ -3,7 +3,7 @@ import { forwardRef } from "react"
 import Image from 'next/image';
 import getConfig from '../../../next.config';
 
-const imageContainerClassName = "relative flex justify-center items-center w-60 h-60 md:w-80 md:h-80 mx-auto mb-4";
+const imageContainerClassName = "relative flex justify-center items-center w-60 h-60 md:w-80 md:h-80 mx-auto mb-4 drop-shadow-lg";
 const BASE_PATH = getConfig.basePath;
 
 const ContactForm = forwardRef((props, ref) => {
