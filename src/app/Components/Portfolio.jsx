@@ -4,7 +4,7 @@ import getConfig from '../../../next.config';
 
 const h3ClassName = "text-2xl py-2 mt-20 dark:text-white"
 const p1ClassName = "text-md py-5 leading-8 text-gray-800 dark:text-gray-200"
-const portfolioImageClassName = "rounded-lg shadow-md shadow-gray-400 object-cover dark:shadow-lg dark:shadow-gray-950"
+const portfolioImageClassName = "rounded-lg shadow-md shadow-gray-600 object-cover dark:shadow-lg dark:shadow-gray-950"
 const BASE_PATH = getConfig.basePath;
 
 export default function Portfolio() {

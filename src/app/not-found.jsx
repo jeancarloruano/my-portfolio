@@ -3,7 +3,7 @@ import Image from 'next/image';
 import getConfig from '../../next.config';
 
 const h3ClassName = "text-2xl py-2 md:text-3xl dark:text-white";
-const imageContainerClassName = "relative mx-auto bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full w-60 h-60 overflow-hidden border-gray-600 border-4 shadow-md shadow-gray-400 dark:border-gray-400 dark:shadow-lg dark:shadow-gray-950";
+const imageContainerClassName = "relative bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full w-80 h-80 overflow-hidden border-gray-600 border-4 shadow-md shadow-gray-400 dark:border-gray-400 dark:shadow-lg dark:shadow-gray-950";
 const pClassName = "text-md py-4 text-gray-800 md:text-xl dark:text-gray-200";
 const BASE_PATH = getConfig.basePath;
 
@@ -14,12 +14,12 @@ export default function NotFound() {
                 404 | Page Not Found
             </h3>
             <p className={pClassName}>
-                We couldn&apos;t find the page you were looking for.
+                Sorry, but we couldn&apos;t find the page you were looking for.
             </p>
             <div className={imageContainerClassName}>
                 <Image className="mt-1" fill
                     style={{objectFit:"cover"}}
-                    src={BASE_PATH + "/author-404.png"}
+                    src={BASE_PATH + "/author-404-memoji.png"}
                     alt="404 Memoji image of the author"
                     priority
                 />    
