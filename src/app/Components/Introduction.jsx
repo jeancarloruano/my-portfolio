@@ -32,7 +32,7 @@ export default function Introduction({contactFormRef}) {
       <div className={imageContainerClassName}>
         <Image className="mt-1" fill
           style={{objectFit:"cover"}}
-          src={BASE_PATH + "author-home-memoji.PNG"}
+          src={BASE_PATH + "/author-home-memoji.PNG"}
           alt="Memoji image of the author"
           priority
         />    
