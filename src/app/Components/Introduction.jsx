@@ -18,8 +18,8 @@ export default function Introduction({contactFormRef}) {
     <section>
       <div className={divBodyClassName}>
         <h2 className={h2ClassName}>Jeancarlo Ruano</h2>
-        <h3 className={h3ClassName}>Developer and designer</h3>
-        <p className={pClassName}>Freelancer providing services for programming and design content needs.
+        <h3 className={h3ClassName}>Developer and software tester</h3>
+        <p className={pClassName}>Providing services for programming and test automation.
           Hit me up down below and let&apos;s get to work!
         </p>
       </div>
@@ -32,7 +32,7 @@ export default function Introduction({contactFormRef}) {
       <div className={imageContainerClassName}>
         <Image className="mt-1" fill
           style={{objectFit:"cover"}}
-          src={BASE_PATH + "/author-home-memoji.PNG"}
+          src={BASE_PATH + "author-home-memoji.PNG"}
           alt="Memoji image of the author"
           priority
         />    

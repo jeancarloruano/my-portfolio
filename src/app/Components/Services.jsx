@@ -23,7 +23,7 @@ export default function Services() {
          My transition from ensuring product excellence to actively participating in its creation has honed my problem-solving skills, collaborative nature, and commitment to delivering polished and user-centric applications. I am excited to leverage my skills in HTML, CSS, JavaScript, and my penchant for precision to contribute effectively to innovative web development projects.
          </p >
          <p className={p1ClassName}>
-            I can offer you a wide range of services including brand design, web-development and programming.
+            I can offer you a wide range of services including web-development, programming and automated software testing.
          </p>
       </div>
       <div className="lg:flex gap-5">
