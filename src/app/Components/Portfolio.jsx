@@ -18,6 +18,7 @@ export default function Portfolio() {
         </div>
         <div className="grid grid-cols-1 gap-8 py-10 lg:flex-row lg:flex-wrap lg:grid-cols-2">
             <div className="basis-1/2 flex-1" >
+                <p>Project 1</p>
                 <Image className={portfolioImageClassName}
                 src={BASE_PATH + "/designs-placeholder.jpeg"}
                 alt="Designs placeholder image"
@@ -28,6 +29,7 @@ export default function Portfolio() {
                 />
             </div>
             <div className="basis-1/2 flex-1" >
+                <p>Project 2</p>
                 <Image className={portfolioImageClassName}
                 src={BASE_PATH + "/designs-placeholder.jpeg"}
                 alt="Designs placeholder image"
@@ -38,6 +40,7 @@ export default function Portfolio() {
                 />
             </div>
             <div className="basis-1/2 flex-1" >
+                <p>Project 3</p>
                 <Image className={portfolioImageClassName}
                 src={BASE_PATH + "/designs-placeholder.jpeg"}
                 alt="Designs placeholder image"
@@ -48,6 +51,7 @@ export default function Portfolio() {
                 />
             </div>
             <div className="basis-1/2 flex-1" >
+                <p>Project 4</p>
                 <Image className={portfolioImageClassName}
                 src={BASE_PATH + "/designs-placeholder.jpeg"}
                 alt="Designs placeholder image"

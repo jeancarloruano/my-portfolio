@@ -3,14 +3,14 @@ import { forwardRef } from "react"
 import Image from 'next/image';
 import getConfig from '../../../next.config';
 
-const imageContainerClassName = "relative flex justify-center items-center w-80 h-80 mx-auto my-4";
+const imageContainerClassName = "relative flex justify-center items-center w-60 h-60 md:w-80 md:h-80 mx-auto mb-4";
 const BASE_PATH = getConfig.basePath;
 
 const ContactForm = forwardRef((props, ref) => {
     return (
         <section ref={ref} className="container mx-auto px-4">
             <div className="text-center">
-                <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Contact Me</h3>
+                <h3 className="text-2xl pt-2 md:text-3xl dark:text-white">Contact Me</h3>
             </div>
             <div className="flex flex-col items-center">
                 <div className={imageContainerClassName}>

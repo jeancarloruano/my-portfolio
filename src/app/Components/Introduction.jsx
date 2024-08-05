@@ -26,7 +26,7 @@ export default function Introduction({contactFormRef}) {
       <div className={logoContainerClassName}>        
         <a className={logoClassName} href={links[0]} target="_blank"><BsLinkedin/></a>
         <a className={logoClassName} href={links[1]} target="_blank"><BsGithub/></a>
-        <a className={logoClassName} href={links[2]} target="_blank"><BsFileEarmarkPersonFill/></a>
+        <a className={logoClassName} href={links[2]} target="_self"><BsFileEarmarkPersonFill/></a>
         <button onClick={() => contactFormRef.current.scrollIntoView({behavior: "smooth"})} className={logoClassName}><BsMailbox2/></button>
       </div>
       <div className={imageContainerClassName}>
