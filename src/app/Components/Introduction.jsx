@@ -20,7 +20,7 @@ export default function Introduction({contactFormRef}) {
         <h2 className={h2ClassName}>Jeancarlo Ruano</h2>
         <h3 className={h3ClassName}>Developer and software tester</h3>
         <p className={pClassName}>Providing services for programming and test automation.
-          Hit me up down below and let&apos;s get to work!
+          Reach out below, and let&apos;s make some magic happen!
         </p>
       </div>
       <div className={logoContainerClassName}>        

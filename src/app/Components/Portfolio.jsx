@@ -29,6 +29,17 @@ export default function Portfolio() {
                 />
             </div>
             <div className="basis-1/2 flex-1" >
+                <p>Android Puzzle Game</p>
+                <Image className={portfolioImageClassName}
+                src={BASE_PATH + "/designs-placeholder.jpeg"}
+                alt="Designs placeholder image"
+                width={2000}
+                height={2000}
+                style={{ width: "100%", height: "auto" }}
+                priority
+                />
+            </div>
+            <div className="basis-1/2 flex-1" >
                 <p>API Automation Framework</p>
                 <Image className={portfolioImageClassName}
                 src={BASE_PATH + "/designs-placeholder.jpeg"}
@@ -40,18 +51,7 @@ export default function Portfolio() {
                 />
             </div>
             <div className="basis-1/2 flex-1" >
-                <p>Project 3</p>
-                <Image className={portfolioImageClassName}
-                src={BASE_PATH + "/designs-placeholder.jpeg"}
-                alt="Designs placeholder image"
-                width={2000}
-                height={2000}
-                style={{ width: "100%", height: "auto" }}
-                priority
-                />
-            </div>
-            <div className="basis-1/2 flex-1" >
-                <p>Project 4</p>
+                <p>Web Automation Framework</p>
                 <Image className={portfolioImageClassName}
                 src={BASE_PATH + "/designs-placeholder.jpeg"}
                 alt="Designs placeholder image"
