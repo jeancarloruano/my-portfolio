@@ -23,28 +23,28 @@ const ContactForm = forwardRef((props, ref) => {
                     />
                 </div>
                 <form className="grid place-items-center w-full md:max-w-3xl mx-auto mt-4">
-                    <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full py-2 px-4 text-gray-800 leading-tight focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600"
+                    <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full py-2 px-4 text-gray-800 leading-tight shadow-inner focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600"
                         type="text" 
                         placeholder="Name"
                         name="user_name"
                         required 
                     />
                     <br />
-                    <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600"
+                    <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full py-2 px-4 text-gray-700 leading-tight shadow-inner focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600"
                         type="text" 
                         placeholder="Email"
                         name="user_email"
                         required 
                     />
                     <br />
-                    <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600"
+                    <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full py-2 px-4 text-gray-700 leading-tight shadow-inner focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600"
                         type="text" 
                         placeholder="Subject"
                         name="subject"
                         required 
                     />
                     <br />
-                    <textarea className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full resize-none py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600" 
+                    <textarea className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full resize-none py-2 px-4 text-gray-700 leading-tight shadow-inner focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600" 
                         name="message"
                         id=""
                         cols="30"
