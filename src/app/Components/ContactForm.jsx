@@ -49,7 +49,7 @@ const ContactForm = forwardRef((props, ref) => {
                         rows="10"
                         placeholder="Body">
                     </textarea>
-                    <button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-gray-100 px-4 py-2 rounded-xl transition duration-200 ease-in-out hover:text-gray-800 dark:text-gray-800 dark:hover:text-white" type="submit">Send</button>
+                    <button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-gray-100 px-4 py-2 rounded-xl shadow-inner-light hover:shadow-inner-light-hover border border-cyan-600 transition duration-200 ease-in-out dark:shadow-inner-dark dark:hover:shadow-inner-dark-hover hover:text-gray-800 dark:text-gray-800 dark:hover:text-white" type="submit">Send</button>
                 </form>
             </div>
         </section>

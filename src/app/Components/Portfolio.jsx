@@ -14,11 +14,11 @@ export default function Portfolio() {
         <div>
             <h3 className={h3ClassName}>My Projects</h3>
             <p className={p1ClassName}>
-                Take a peek at some of the projects I've been working on! In them, I blend a variety of cool technologies to create robust, user-friendly, and efficient web development and automation solutions.
+                Take a peek at some of the projects I&apos;ve been working on! In them, I blend a variety of cool technologies to create robust, user-friendly, and efficient web development and automation solutions.
             </p>
 
             <p className={p1ClassName}>
-                Also wondering how this website came to be? It was crafted using React, NextJS, and Tailwind CSS. Huge thanks to <Link href="https://youtu.be/k-Pi5ZMxHWY?si=zKnT1EjmQfDyVZMv" target="_blank" className="text-teal-500 font-bold transform transition-transform duration-300 hover:text-white hover:scale-105">developedbyed</Link> for the awesome tutorial that sparked the inspiration! Don't forget to check out and support his channel!
+                Also wondering how this website came to be? It was crafted using React, NextJS, and Tailwind CSS. Huge thanks to <Link href="https://youtu.be/k-Pi5ZMxHWY?si=zKnT1EjmQfDyVZMv" target="_blank" className="text-teal-500 font-bold transform transition-transform duration-300 hover:text-white hover:scale-105">developedbyed</Link> for the awesome tutorial that sparked the inspiration! Don&apos;t forget to check out and support his channel!
             </p>
 
         </div>
