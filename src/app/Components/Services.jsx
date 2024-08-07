@@ -6,7 +6,7 @@ const p1ClassName = "text-md py-5 leading-8 text-gray-800 dark:text-gray-200";
 const spanClassName = "text-teal-500 font-bold";
 const h4ClassName = "text-lg font-medium py-4 text-teal-600";
 const serviceCardListClassName = "list-disc text-left text-gray-800 py-1 dark:text-gray-200";
-const serviceCardClassName = "bg-gray-50 flex flex-col items-center text-center shadow-md shadow-gray-600 p-10 rounded-xl my-10 dark:bg-gray-700 dark:shadow-lg dark:shadow-gray-950 flex-1";
+const serviceCardClassName = "bg-gray-200 flex flex-col items-center text-center shadow-md shadow-gray-600 p-10 rounded-xl my-10 dark:bg-gray-700 dark:shadow-lg dark:shadow-gray-950 flex-1";
 const BASE_PATH = getConfig.basePath;
 
 export default function Services() {
