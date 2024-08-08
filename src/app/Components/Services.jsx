@@ -6,10 +6,11 @@ const pClass = 'text-md py-5 leading-8 text-gray-800 dark:text-gray-200'
 const spanClass = 'text-teal-500 font-bold'
 const imageClass = 'drop-shadow-lg'
 const serviceCardContainerClass = 'lg:flex gap-5'
-const serviceCardClassName = 'bg-gray-200 flex flex-col items-center text-center shadow-md shadow-gray-600 p-10 rounded-xl my-10 dark:bg-gray-700 dark:shadow-lg dark:shadow-gray-950 flex-1'
+const serviceCardClass = 'bg-gray-200 flex flex-col items-center text-center shadow-md shadow-gray-600 p-10 rounded-xl my-10 dark:bg-gray-700 dark:shadow-lg dark:shadow-gray-950 flex-1'
 const serviceCardH3Class = 'text-lg font-medium pt-8 pb-2 dark:text-white'
 const serviceCardH4Class = 'text-lg font-medium py-4 text-teal-600'
-const serviceCardListClassName = 'list-disc text-left text-gray-800 py-1 dark:text-gray-200'
+const serviceCardPClass = 'py-2 dark:text-white'
+const serviceCardListClass = 'list-disc text-left text-gray-800 py-1 dark:text-gray-200'
 
 const BASE_PATH = getConfig.basePath
 
@@ -31,7 +32,7 @@ export default function Services() {
          </p>
       </div>
       <div id='service-card-container' className={serviceCardContainerClass}>
-        <div className={serviceCardClassName}>
+        <div className={serviceCardClass}>
             <Image className={imageClass}
             src={BASE_PATH + "/web-development-icon.png"}
             alt="Web development icon"
@@ -40,17 +41,17 @@ export default function Services() {
             priority
             />
             <h3 className={serviceCardH3Class}>Web Development</h3>
-            <p className="py-2 dark:text-white">
+            <p className={serviceCardPClass}>
               With a knack for HTML, CSS, and JavaScript, I build stunning, user-friendly websites that are both visually appealing and functional.
             </p>
             <h4 className={serviceCardH4Class}>Technologies used</h4>
             <ul>
-              <li className={serviceCardListClassName}>React.js</li>
-              <li className={serviceCardListClassName}>HTML</li>
-              <li className={serviceCardListClassName}>CSS</li>
+              <li className={serviceCardListClass}>React.js</li>
+              <li className={serviceCardListClass}>HTML</li>
+              <li className={serviceCardListClass}>CSS</li>
             </ul>
         </div>
-        <div className={serviceCardClassName}>
+        <div className={serviceCardClass}>
             <Image className={imageClass}
             src={BASE_PATH + "/programming-icon.png"}
             alt="Programming icon"
@@ -59,17 +60,17 @@ export default function Services() {
             priority
             />
             <h3 className={serviceCardH3Class}>Programming</h3>
-            <p className="py-2 dark:text-white">
+            <p className={serviceCardPClass}>
               I love bringing ideas to life through programming, creating robust applications that solve real-world problems.
             </p>
             <h4 className={serviceCardH4Class}>Technologies used</h4>
             <ul>
-              <li className={serviceCardListClassName}>JavaScript</li>
-              <li className={serviceCardListClassName}>Python</li>
-              <li className={serviceCardListClassName}>Java</li>
+              <li className={serviceCardListClass}>JavaScript</li>
+              <li className={serviceCardListClass}>Python</li>
+              <li className={serviceCardListClass}>Java</li>
             </ul>
         </div>
-        <div className={serviceCardClassName}>
+        <div className={serviceCardClass}>
             <Image className={imageClass}
             src={BASE_PATH + "/automation-icon.png"}
             alt="Automation icon"
@@ -78,14 +79,14 @@ export default function Services() {
             priority
             />
             <h3 className={serviceCardH3Class}>Automation</h3>
-            <p className="py-2 dark:text-white">
+            <p className={serviceCardPClass}>
               I specialize in automated software testing, making sure your applications run smoothly and efficiently with minimal manual intervention.
             </p>
             <h4 className={serviceCardH4Class}>Technologies used</h4>
             <ul>
-              <li className={serviceCardListClassName}>Playwright</li>
-              <li className={serviceCardListClassName}>Selenium</li>
-              <li className={serviceCardListClassName}>TestNG</li>
+              <li className={serviceCardListClass}>Playwright</li>
+              <li className={serviceCardListClass}>Selenium</li>
+              <li className={serviceCardListClass}>TestNG</li>
             </ul>
         </div>
       </div>
