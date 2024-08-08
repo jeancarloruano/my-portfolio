@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { useRef } from 'react'
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
@@ -11,8 +11,8 @@ import ScrollToTopButton from './Components/ScrollToTopButton'
 export default function Home() {
   const contactFormRef = useRef()
   return (
-    <div id="home">
-      <div id="home-inner">
+    <div id='home'>
+      <div id='home-inner'>
         <ScrollToTopButton />
         <NavBar />
         <Introduction contactFormRef={contactFormRef} />

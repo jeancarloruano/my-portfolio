@@ -12,9 +12,9 @@ module.exports = {
       },
       boxShadow: {
         'inner-light': 'inset 0 2px 4px rgba(0, 0, 0, 0.20)',
-        'inner-light-hover': 'inset 0 2px 4px rgba(0, 0, 0, 0.30)',
+        'inner-light-bezel': 'inset 0 4px 6px rgba(229, 231, 235, 0.4)',
         'inner-dark': 'inset 0 2px 4px rgba(24, 24, 27, 0.50)',
-        'inner-dark-hover': 'inset 0 2px 4px rgba(24, 24, 27, 0.60)',
+        'inner-dark-bezel': 'inset 0 4px 6px rgba(229, 231, 235, 0.20)',
       },
     },
   },
