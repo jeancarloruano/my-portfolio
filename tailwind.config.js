@@ -25,7 +25,8 @@ module.exports = {
       },
       keyframes: {
         'bounce-fade': {
-          '0%, 50%, 100%': { transform: 'translateY(0)' },
+          '0%': { transform: 'translateY(100px)' },
+          '50%, 100%': { transform: 'translateY(0)' },
           '25%': { transform: 'translateY(-30px)' },
           '75%': { transform: 'translateY(-15px)'},
         },
