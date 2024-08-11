@@ -32,7 +32,7 @@ export default function Portfolio() {
                     Wondering how this website came to be? It was crafted using React, NextJS, and Tailwind CSS. Huge thanks to <Link href="https://youtu.be/k-Pi5ZMxHWY?si=zKnT1EjmQfDyVZMv" target="_blank" className="text-teal-500 font-bold transform transition-transform duration-300 hover:text-white hover:scale-105">developedbyed</Link> for the awesome tutorial that sparked the inspiration! Don&apos;t forget to check out and support his channel!
                 </p>
                 <p className={pClass}>
-                    <span className={spanClass}>Note: </span>Currently, this website serves as a technology demonstration to highlight my knowledge in web development and various programming technologies. While I plan to use it as my portfolio, please be aware that certain sections, such as "My Projects" and "Contact Me," are still under development.
+                    <span className={spanClass}>Note: </span>Currently, this website serves as a technology demonstration to highlight my knowledge in web development and various programming technologies. While I plan to use it as my portfolio, please be aware that certain sections, such as &quot;My Projects&quot; and &quot;Contact Me,&quot; are still under development.
                 </p>
             </div>
             <div className={portfoliosContainerClass}>
