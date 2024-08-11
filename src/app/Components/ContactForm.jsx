@@ -14,6 +14,7 @@ const formClass = 'grid place-items-center w-full md:max-w-3xl mx-auto mt-4'
 const BASE_PATH = getConfig.basePath
 
 const ContactForm = forwardRef((props, ref) => {
+
     return (
         <section ref={ref} id='contact-section' className={contactSectionContainerClass}>
             <div className={h3ContainerClass}>
