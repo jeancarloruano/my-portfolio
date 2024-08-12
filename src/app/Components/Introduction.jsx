@@ -1,4 +1,4 @@
-import {BsFileEarmarkPersonFill, BsLinkedin, BsGithub, BsMailbox2} from 'react-icons/bs'
+import {BsFileEarmarkPersonFill, BsLinkedin, BsGithub, BsMailbox2, BsBriefcaseFill} from 'react-icons/bs'
 import Image from 'next/image'
 import getConfig from '../../../next.config'
 
@@ -26,7 +26,7 @@ export default function Introduction({contactFormRef}) {
       <div className={logoContainerClass}>        
         <a className={logoClass} href={links[0]} target='_blank'><BsLinkedin/></a>
         <a className={logoClass} href={links[1]} target='_blank'><BsGithub/></a>
-        <a className={logoClass} href={links[2]} target='_self'><BsFileEarmarkPersonFill/></a>
+        <a className={logoClass} href={links[2]} target='_self'><BsBriefcaseFill/></a>
         <button onClick={() => contactFormRef.current.scrollIntoView({behavior: 'smooth'})} className={logoClass}><BsMailbox2/></button>
       </div>
       <div className={imageContainerClass}>
