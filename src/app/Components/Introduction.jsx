@@ -10,7 +10,7 @@ const logoContainerClass = 'text-4xl flex justify-center gap-16 py-3 text-gray-6
 const logoClass = 'transition duration-100 ease-in-out hover:text-cyan-500 hover:scale-105'
 const imageContainerClass = 'relative mx-auto bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 border-gray-600 border-4 shadow-md shadow-gray-600 dark:border-gray-400 dark:shadow-lg dark:shadow-gray-950'
 const imageClass = 'mt-1'
-const links = ['https://www.linkedin.com/in/jeancarloruano/', 'https://github.com/jeancarloruano', '/resume']
+const links = ['https://www.linkedin.com/in/jeancarloruano/', 'https://github.com/jeancarloruano', 'resume']
 const BASE_PATH = getConfig.basePath
 
 export default function Introduction({contactFormRef}) {
