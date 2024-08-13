@@ -6,7 +6,7 @@ const mainClass = 'flex flex-col items-center justify-center min-h-screen space-
 const h3Class = 'text-2xl py-5 md:text-3xl dark:text-white'
 const imageContainerClass = 'relative bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full w-80 h-80 overflow-hidden border-gray-600 border-4 shadow-md shadow-gray-400 dark:border-gray-400 dark:shadow-lg dark:shadow-gray-950'
 const pClass = 'text-md py-5 text-gray-800 md:text-xl dark:text-gray-200'
-const linkClass = 'text-teal-500 font-bold transform transition-transform duration-300 hover:text-white hover:scale-105'
+const linkClass = 'text-teal-500 font-bold transform transition-transform duration-300 hover:text-white'
 const BASE_PATH = getConfig.basePath
 
 export default function NotFound() {

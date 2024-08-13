@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import getConfig from '../../../next.config'
+import Link from 'next/link'
 
 const h3Class = 'text-2xl py-2 mt-20 dark:text-white'
 const pClass = 'text-md py-5 leading-8 text-gray-800 dark:text-gray-200'
@@ -11,6 +12,7 @@ const serviceCardH3Class = 'text-lg font-medium pt-8 pb-2 dark:text-white'
 const serviceCardH4Class = 'text-lg font-medium py-4 text-teal-600'
 const serviceCardPClass = 'py-2 dark:text-white'
 const serviceCardListClass = 'list-disc text-left text-gray-800 py-1 dark:text-gray-200'
+const linkClass = 'text-teal-500 font-bold transform transition-transform duration-300 hover:text-white'
 
 const BASE_PATH = getConfig.basePath
 
@@ -26,6 +28,7 @@ export default function Services() {
          </p>
          <p className={pClass}>
          My transition from ensuring product excellence to actively participating in its creation has honed my problem-solving skills, collaborative nature, and commitment to delivering polished and user-centric applications. I am excited to leverage my skills in HTML, CSS, JavaScript, and my penchant for precision to contribute effectively to innovative web development projects.
+         For a more detailed summary of my qualifications, click <Link href='/resume' className={linkClass}>here</Link>!
          </p >
          <p className={pClass}>
             I can offer you a wide range of services including web-development, programming and automated software testing.

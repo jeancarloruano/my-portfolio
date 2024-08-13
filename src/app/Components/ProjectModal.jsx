@@ -16,16 +16,20 @@ const BASE_PATH = getConfig.basePath
 function ProjectModal({onClose}) {
     const projectModalRef = useRef()
 
-    const closeProjectModal = (e) => {
-        if(projectModalRef.current === e.target){
+    const handleClickOutsideModal = (event) => {
+        if(projectModalRef.current === event.target){
             onClose()
         }
     }
 
+    const handleClickExitButton = () => {
+        onClose()
+    }
+
     return (
-        <div onClick={closeProjectModal} ref={projectModalRef} className={projectModalContainerClass}>
+        <div onClick={handleClickOutsideModal} ref={projectModalRef} className={projectModalContainerClass}>
             <div className={projectModalClass}>
-                <div className={exitButtonContainerClass}><button onClick={onClose} className={exitButtonClass}><BsXCircleFill size={30}/></button></div>
+                <div className={exitButtonContainerClass}><button onClick={handleClickExitButton} className={exitButtonClass}><BsXCircleFill size={30}/></button></div>
                 <div className={imageContainerClass}>
                     <Image
                         fill

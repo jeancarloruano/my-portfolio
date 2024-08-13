@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { BsThreeDotsVertical } from "react-icons/bs";
 import getConfig from '../../../next.config'
 import ProjectModal from './ProjectModal'
 import { useState } from 'react'
@@ -8,13 +9,19 @@ const h3Class = 'text-2xl py-2 mt-20 dark:text-white'
 const pClass = 'text-md py-5 leading-8 text-gray-800 dark:text-gray-200'
 const h4Class = 'text-lg lg:text-xl leading-8 py-2 text-gray-800 dark:text-gray-200'
 const spanClass = 'font-bold'
-const portfolioImageClass = 'rounded-lg shadow-md shadow-gray-600 object-cover transition duration-100 ease-in-out outline hover:outline-4 hover:outline-cyan-500 hover:scale-105 dark:shadow-lg dark:shadow-gray-950'
+const imageClass = 'rounded-lg'
+const portfolioImageClass = 'relative rounded-lg shadow-md outline-none shadow-gray-600 object-cover transition duration-100 ease-in-out outline hover:outline-4 hover:outline-cyan-500 hover:scale-105 dark:shadow-lg dark:shadow-gray-950'
 const portfoliosContainerClass = 'grid grid-cols-1 gap-8 py-10 lg:flex-row lg:flex-wrap lg:grid-cols-2'
-const portfolioImageContainerClass = 'basis-1/2 flex-1 text-center'
+const portfolioImageContainerClass = 'relative basis-1/2 flex-1 text-center'
+const modalIconClass = 'absolute top-4 right-4 text-gray-100 z-20 text-2xl transition duration-100 ease-in-out hover:text-cyan-500'
 const BASE_PATH = getConfig.basePath
 
 export default function Portfolio() {
     const [showProjectModal, setShowProjectModal] = useState(false)
+
+    const handleClickPortfolio = () => {
+        setShowProjectModal(true)
+    }
 
     const handleCloseModal = () => {
         setShowProjectModal(false)
@@ -38,51 +45,59 @@ export default function Portfolio() {
             <div className={portfoliosContainerClass}>
                 <div className={portfolioImageContainerClass}>
                     <h4 className={h4Class}>Academic Planner</h4>
-                    <Image className={portfolioImageClass}
-                    onClick={() => setShowProjectModal(true)}
-                    src={BASE_PATH + '/designs-placeholder.jpeg'}
-                    alt='Designs placeholder image'
-                    width={2000}
-                    height={2000}
-                    style={{ width: '100%', height: 'auto' }}
-                    priority
-                    />
+                    <div className={portfolioImageClass} onClick={handleClickPortfolio}>
+                        <BsThreeDotsVertical className={modalIconClass} />
+                        <Image className={imageClass}
+                            src={BASE_PATH + '/designs-placeholder.jpeg'}
+                            alt='Designs placeholder image'
+                            width={2000}
+                            height={2000}
+                            style={{ width: '100%', height: 'auto' }}
+                            priority
+                        />
+                    </div>
                 </div>
                 <div className={portfolioImageContainerClass}>
-                    <h4 className={h4Class}>Android Puzzle Game</h4>
-                    <Image className={portfolioImageClass}
-                    onClick={() => setShowProjectModal(true)}
-                    src={BASE_PATH + '/designs-placeholder.jpeg'}
-                    alt='Designs placeholder image'
-                    width={2000}
-                    height={2000}
-                    style={{ width: '100%', height: 'auto' }}
-                    priority
-                    />
-                </div>
-                <div className={portfolioImageContainerClass}>
-                    <h4 className={h4Class}>API Automation Framework</h4>
-                    <Image className={portfolioImageClass}
-                    onClick={() => setShowProjectModal(true)}
-                    src={BASE_PATH + '/designs-placeholder.jpeg'}
-                    alt='Designs placeholder image'
-                    width={2000}
-                    height={2000}
-                    style={{ width: '100%', height: 'auto' }}
-                    priority
-                    />
+                    <h4 className={h4Class}>Mobile Puzzle Game</h4>
+                    <div className={portfolioImageClass} onClick={handleClickPortfolio}>
+                        <BsThreeDotsVertical className={modalIconClass} />
+                        <Image className={imageClass}
+                            src={BASE_PATH + '/designs-placeholder.jpeg'}
+                            alt='Designs placeholder image'
+                            width={2000}
+                            height={2000}
+                            style={{ width: '100%', height: 'auto' }}
+                            priority
+                        />
+                    </div>
                 </div>
                 <div className={portfolioImageContainerClass}>
                     <h4 className={h4Class}>Web Automation Framework</h4>
-                    <Image className={portfolioImageClass}
-                    onClick={() => setShowProjectModal(true)}
-                    src={BASE_PATH + '/designs-placeholder.jpeg'}
-                    alt='Designs placeholder image'
-                    width={2000}
-                    height={2000}
-                    style={{ width: '100%', height: 'auto' }}
-                    priority
-                    />
+                    <div className={portfolioImageClass} onClick={handleClickPortfolio}>
+                        <BsThreeDotsVertical className={modalIconClass} />
+                        <Image className={imageClass}
+                            src={BASE_PATH + '/designs-placeholder.jpeg'}
+                            alt='Designs placeholder image'
+                            width={2000}
+                            height={2000}
+                            style={{ width: '100%', height: 'auto' }}
+                            priority
+                        />
+                    </div>
+                </div>
+                <div className={portfolioImageContainerClass}>
+                    <h4 className={h4Class}>API Automation Framework</h4>
+                    <div className={portfolioImageClass} onClick={handleClickPortfolio}>
+                        <BsThreeDotsVertical className={modalIconClass} />
+                        <Image className={imageClass}
+                            src={BASE_PATH + '/designs-placeholder.jpeg'}
+                            alt='Designs placeholder image'
+                            width={2000}
+                            height={2000}
+                            style={{ width: '100%', height: 'auto' }}
+                            priority
+                        />
+                    </div>
                 </div>
             </div>
             {showProjectModal && <ProjectModal onClose={handleCloseModal}/>}
