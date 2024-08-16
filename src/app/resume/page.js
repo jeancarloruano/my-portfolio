@@ -14,7 +14,7 @@ export default function Resume() {
     return (
         <section>
             <div className="max-w-4xl mx-auto p-5 text-gray-800 dark:text-gray-200">
-                <div className= 'flex items-center justify-center w-8 h-8 rounded-full cursor-pointer text-3xl text-gray-600 shadow-md shadow-gray-600 dark:text-gray-400 dark:shadow-lg dark:shadow-gray-950'>
+                <div className= 'mb-3 flex items-center justify-center w-6 h-6 rounded-full cursor-pointer text-3xl text-gray-600 shadow-md shadow-gray-600 dark:text-gray-400 dark:shadow-lg dark:shadow-gray-950'>
                     <a className='hover:text-cyan-500 hover:scale-105 transition duration-100 ease-in-out' href={BASE_PATH + '/'}><BsFillArrowLeftCircleFill /></a>
                 </div>
                 <h2 className={h2Class}>Jeancarlo Ruano</h2>
@@ -45,11 +45,11 @@ export default function Resume() {
 
                 <div className="mb-6">
                     <div className="flex justify-between">
-                        <span className="font-bold">QA Engineer (Contract)</span>
+                        <span className="font-bold">Altruist Financial</span>
                         <span className="font-bold">Feb. 2022 – Feb. 2024</span>
                     </div>
                     <div className="flex justify-between">
-                        <span className="italic mb-2">QA Engineer</span>
+                        <span className="italic mb-2">QA Engineer (Contract)</span>
                         <div className="italic mb-2">Culver City, CA</div>
                     </div>
                     <ul className="list-disc list-inside ml-4 space-y-2">
@@ -65,7 +65,7 @@ export default function Resume() {
                     </ul>
                 </div>
 
-                <h3 className={h3Class}>Internships</h3>
+                <h3 className={h3Class}>Internship</h3>
 
                 <div className="mb-6">
                     <div className="flex justify-between">
