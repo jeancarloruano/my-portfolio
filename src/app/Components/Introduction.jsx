@@ -26,14 +26,14 @@ export default function Introduction({contactFormRef}) {
       <div className={logoContainerClass}>        
         <a className={logoClass} href={links[0]} target='_blank'><BsLinkedin/></a>
         <a className={logoClass} href={links[1]} target='_blank'><BsGithub/></a>
-        <a className={logoClass} href={links[2]} target='_self'><BsBriefcaseFill/></a>
+        <a className={logoClass} href={BASE_PATH + links[2]} target='_self'><BsBriefcaseFill/></a>
         <button onClick={() => contactFormRef.current.scrollIntoView({behavior: 'smooth'})} className={logoClass}><BsMailbox2/></button>
       </div>
       <div className={imageContainerClass}>
         <Image className={imageClass} fill
-          style={{objectFit:"cover"}}
-          src={BASE_PATH + "/author-home-memoji.PNG"}
-          alt="Memoji image of the author"
+          style={{objectFit:'cover'}}
+          src={BASE_PATH + '/author-home-memoji.PNG'}
+          alt='Memoji image of the author'
           priority
         />    
       </div>

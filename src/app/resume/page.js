@@ -1,4 +1,5 @@
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs'
+import getConfig from '../../../next.config'
 
 const resumeContainerClass = 'text-left p10'
 const h2Class = 'text-5xl py-2 text-cyan-500 text-center font-medium md:text-6xl lg:text-7xl'
@@ -7,12 +8,14 @@ const pClass = 'text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-2
 const spanClass = 'text-teal-500 font-bold'
 const listClass = 'list-disc text-gray-800 dark:text-gray-200'
 
+const BASE_PATH = getConfig.basePath
+
 export default function Resume() {
     return (
         <section>
             <div className="max-w-4xl mx-auto p-5 text-gray-800 dark:text-gray-200">
                 <div className= 'flex items-center justify-center w-8 h-8 rounded-full cursor-pointer text-3xl text-gray-600 shadow-md shadow-gray-600 dark:text-gray-400 dark:shadow-lg dark:shadow-gray-950'>
-                    <a className='hover:text-cyan-500 hover:scale-105 transition duration-100 ease-in-out' href='/'><BsFillArrowLeftCircleFill /></a>
+                    <a className='hover:text-cyan-500 hover:scale-105 transition duration-100 ease-in-out' href={BASE_PATH + '/'}><BsFillArrowLeftCircleFill /></a>
                 </div>
                 <h2 className={h2Class}>Jeancarlo Ruano</h2>
                 <p className='text-center text-2xl py-2 md:text-3xl dark:text-white mb-4'>Los Angeles, CA</p>

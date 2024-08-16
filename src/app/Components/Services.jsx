@@ -37,8 +37,8 @@ export default function Services() {
       <div id='service-card-container' className={serviceCardContainerClass}>
         <div className={serviceCardClass}>
             <Image className={imageClass}
-            src={BASE_PATH + "/web-development-icon.png"}
-            alt="Web development icon"
+            src={BASE_PATH + '/web-development-icon.png'}
+            alt='Web development icon'
             width={150}
             height={150}
             priority
@@ -56,8 +56,8 @@ export default function Services() {
         </div>
         <div className={serviceCardClass}>
             <Image className={imageClass}
-            src={BASE_PATH + "/programming-icon.png"}
-            alt="Programming icon"
+            src={BASE_PATH + '/programming-icon.png'}
+            alt='Programming icon'
             width={150}
             height={150}
             priority
@@ -75,8 +75,8 @@ export default function Services() {
         </div>
         <div className={serviceCardClass}>
             <Image className={imageClass}
-            src={BASE_PATH + "/automation-icon.png"}
-            alt="Automation icon"
+            src={BASE_PATH + '/automation-icon.png'}
+            alt='Automation icon'
             width={150}
             height={150}
             priority
