@@ -3,7 +3,7 @@ import getConfig from '../../../next.config'
 
 const resumeContainerClass = 'text-left p10'
 const h2Class = 'text-5xl py-2 text-cyan-500 text-center font-medium md:text-6xl lg:text-7xl'
-const h3Class = 'text-2xl py-2 md:text-3xl dark:text-white font-semibold mb-2 border-b border-gray-800 dark:border-gray-200 pb-1'
+const h3Class = 'text-xl md:text-2xl py-2 md:text-3xl dark:text-white font-semibold mb-2 border-b border-gray-800 dark:border-gray-200 pb-1'
 const pClass = 'text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-200'
 const spanClass = 'text-teal-500 font-bold'
 const listClass = 'list-disc text-gray-800 dark:text-gray-200'
@@ -13,7 +13,7 @@ const BASE_PATH = getConfig.basePath
 export default function Resume() {
     return (
         <section>
-            <div className="max-w-4xl mx-auto p-5 text-gray-800 dark:text-gray-200">
+            <div className="max-w-4xl mx-auto py-5 md:px-5 text-gray-800 dark:text-gray-200">
                 <div className= 'mb-3 flex items-center justify-center w-6 h-6 rounded-full cursor-pointer text-3xl text-gray-600 shadow-md shadow-gray-600 dark:text-gray-400 dark:shadow-lg dark:shadow-gray-950'>
                     <a className='hover:text-cyan-500 hover:scale-105 transition duration-100 ease-in-out' href={BASE_PATH + '/'}><BsFillArrowLeftCircleFill /></a>
                 </div>
@@ -31,7 +31,7 @@ export default function Resume() {
                         <span className="italic mb-2">QA Analyst</span>
                         <div className="italic mb-2">Los Alamitos, CA</div>
                     </div>
-                    <ul className="list-disc list-inside ml-4 space-y-2">
+                    <ul className="list-disc list-inside md:ml-4 space-y-2">
                         <li>Manage and maintain the integrity of data within various systems, conducting quality assurance checks to ensure accuracy and reliability.</li>
                         <li>Facilitate communication between the company and business partners, ensuring efficient information exchange.</li>
                         <li>Create and maintain detailed documentation and reports, ensuring transparency and clarity in data processes.</li>
@@ -52,7 +52,7 @@ export default function Resume() {
                         <span className="italic mb-2">QA Engineer (Contract)</span>
                         <div className="italic mb-2">Culver City, CA</div>
                     </div>
-                    <ul className="list-disc list-inside ml-4 space-y-2">
+                    <ul className="list-disc list-inside md:ml-4 space-y-2">
                         <li>Created and implemented detailed test plans early in the SDLC for React-based web applications, resulting in a reduction in post-release defects and ensuring software stability.</li>
                         <li>Developed and maintained the test automation framework using Selenium, enhancing test efficiency and coverage.</li>
                         <li>Provided technical support and guidance regarding data-related inquiries and troubleshooting.</li>
@@ -72,7 +72,7 @@ export default function Resume() {
                         <span className="font-bold">JP Morgan Chase & Co. Virtual Experience Program</span>
                         <span className="font-bold">Spring 2021</span>
                     </div>
-                    <ul className="list-disc list-inside ml-4 space-y-2">
+                    <ul className="list-disc list-inside md:ml-4 space-y-2">
                         <li>Established and configured the development environment by downloading essential Git repositories, files, tools, and dependencies.</li>
                         <li>Debugged and corrected issues in TypeScript files within the given repositories.</li>
                         <li>Enhanced repository test coverage by adding comprehensive unit tests.</li>
@@ -95,7 +95,7 @@ export default function Resume() {
 
                 <h3 className={h3Class}>Skills</h3>
 
-                <ul className="list-disc list-inside ml-4 space-y-2">
+                <ul className="list-disc list-inside md:ml-4 space-y-2">
                     <li><strong>Technologies:</strong> Selenium, Playwright, Java, Python, JavaScript, HTML, CSS, React, Node.js</li>
                     <li><strong>Tools:</strong> JIRA, TestRail, Postman, Jenkins, Git, AWS</li>
                     <li><strong>Platforms:</strong> Windows, MacOS, Linux</li>
