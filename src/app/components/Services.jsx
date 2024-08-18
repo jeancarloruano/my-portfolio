@@ -36,7 +36,7 @@ export default function Services() {
       </div>
       <div id='service-card-container' className={serviceCardContainerClass}>
         <div className={serviceCardClass}>
-            <Image className={'-mr-6 ${imageClass}'}
+            <Image className={`-mr-6 ${imageClass}`}
             src={BASE_PATH + '/web-development-icon.png'}
             alt='Web development icon'
             width={140}
