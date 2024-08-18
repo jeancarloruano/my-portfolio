@@ -1,12 +1,12 @@
 'use client'
 import { useRef } from 'react'
-import NavBar from './Components/NavBar'
-import Footer from './Components/Footer'
-import Introduction from './Components/Introduction'
-import Services from './Components/Services'
-import Portfolio from './Components/Portfolio'
-import ContactForm from './Components/ContactForm'
-import ScrollToTopButton from './Components/ScrollToTopButton'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import Introduction from './components/Introduction'
+import Services from './components/Services'
+import Portfolio from './components/Portfolio'
+import ContactForm from './components/ContactForm'
+import ScrollToTopButton from './components/ScrollToTopButton'
 
 export default function Home() {
   const contactFormRef = useRef()

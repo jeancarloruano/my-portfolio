@@ -1,13 +1,8 @@
-import { BsFillArrowLeftCircleFill } from 'react-icons/bs'
 import getConfig from '../../../next.config'
 import BackButton from '../components/BackButton'
 
-const resumeContainerClass = 'text-left p10'
 const h2Class = 'text-5xl py-2 text-cyan-500 text-center font-medium md:text-6xl lg:text-7xl'
 const h3Class = 'text-xl md:text-2xl py-2 md:text-3xl dark:text-white font-semibold mb-2 border-b border-gray-800 dark:border-gray-200 pb-1'
-const pClass = 'text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-200'
-const spanClass = 'text-teal-500 font-bold'
-const listClass = 'list-disc text-gray-800 dark:text-gray-200'
 
 const BASE_PATH = getConfig.basePath
 
