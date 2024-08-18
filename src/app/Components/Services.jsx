@@ -6,7 +6,7 @@ const h3Class = 'text-2xl py-2 mt-20 dark:text-white'
 const pClass = 'text-md py-5 leading-8 text-gray-800 dark:text-gray-200'
 const spanClass = 'text-teal-500 font-bold'
 const imageClass = 'drop-shadow-lg'
-const serviceCardContainerClass = 'lg:flex gap-5'
+const serviceCardContainerClass = 'xl:flex gap-5'
 const serviceCardClass = 'bg-gray-200 flex flex-col items-center text-center shadow-md shadow-gray-600 p-10 rounded-xl my-10 dark:bg-gray-700 dark:shadow-lg dark:shadow-gray-950 flex-1'
 const serviceCardH3Class = 'text-lg font-medium pt-8 pb-2 dark:text-white'
 const serviceCardH4Class = 'text-lg font-medium py-4 text-teal-600'
@@ -39,8 +39,8 @@ export default function Services() {
             <Image className={imageClass}
             src={BASE_PATH + '/web-development-icon.png'}
             alt='Web development icon'
-            width={150}
-            height={150}
+            width={140}
+            height={140}
             priority
             />
             <h3 className={serviceCardH3Class}>Web Development</h3>
@@ -58,8 +58,8 @@ export default function Services() {
             <Image className={imageClass}
             src={BASE_PATH + '/programming-icon.png'}
             alt='Programming icon'
-            width={150}
-            height={150}
+            width={140}
+            height={140}
             priority
             />
             <h3 className={serviceCardH3Class}>Programming</h3>
@@ -77,8 +77,8 @@ export default function Services() {
             <Image className={imageClass}
             src={BASE_PATH + '/automation-icon.png'}
             alt='Automation icon'
-            width={150}
-            height={150}
+            width={140}
+            height={140}
             priority
             />
             <h3 className={serviceCardH3Class}>Automation</h3>
