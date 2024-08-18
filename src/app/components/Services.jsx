@@ -36,11 +36,11 @@ export default function Services() {
       </div>
       <div id='service-card-container' className={serviceCardContainerClass}>
         <div className={serviceCardClass}>
-            <Image className={`-mr-6 ${imageClass}`}
+            <Image className={`-mr-6 mt-4 ${imageClass}`}
             src={BASE_PATH + '/web-development-icon.png'}
             alt='Web development icon'
-            width={140}
-            height={140}
+            width={130}
+            height={130}
             priority
             />
             <h3 className={serviceCardH3Class}>Web Development</h3>
