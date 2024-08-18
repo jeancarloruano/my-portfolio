@@ -7,7 +7,7 @@ const pClass = 'text-md py-5 leading-8 text-gray-800 dark:text-gray-200'
 const spanClass = 'text-teal-500 font-bold'
 const imageClass = 'drop-shadow-lg'
 const serviceCardContainerClass = 'xl:flex gap-5'
-const serviceCardClass = 'bg-gray-200 flex flex-col items-center text-center shadow-md shadow-gray-600 p-10 rounded-xl my-10 dark:bg-gray-700 dark:shadow-lg dark:shadow-gray-950 flex-1'
+const serviceCardClass = 'bg-gray-200 flex flex-col items-center text-center shadow-md shadow-gray-600 px-4 py-10 md:p-10 rounded-xl my-10 dark:bg-gray-700 dark:shadow-lg dark:shadow-gray-950 flex-1'
 const serviceCardH3Class = 'text-lg font-medium pt-8 pb-2 dark:text-white'
 const serviceCardH4Class = 'text-lg font-medium py-4 text-teal-600'
 const serviceCardPClass = 'py-2 dark:text-white'
@@ -36,7 +36,7 @@ export default function Services() {
       </div>
       <div id='service-card-container' className={serviceCardContainerClass}>
         <div className={serviceCardClass}>
-            <Image className={imageClass}
+            <Image className={'-mr-6 ${imageClass}'}
             src={BASE_PATH + '/web-development-icon.png'}
             alt='Web development icon'
             width={140}
@@ -74,7 +74,7 @@ export default function Services() {
             </ul>
         </div>
         <div className={serviceCardClass}>
-            <Image className={imageClass}
+            <Image className={`-ml-8 ${imageClass}`}
             src={BASE_PATH + '/automation-icon.png'}
             alt='Automation icon'
             width={140}
