@@ -9,7 +9,7 @@ const BASE_PATH = getConfig.basePath
 export default function Resume() {
     return (
         <section>
-            <div className="max-w-4xl mx-auto py-14 md:px-5 text-gray-800 dark:text-gray-200">
+            <div className="max-w-4xl xl:max-w-6xl mx-auto py-14 md:px-5 text-gray-800 dark:text-gray-200">
                 <BackButton/>
                 <h2 className={h2Class}>Jeancarlo Ruano</h2>
                 <p className='text-center text-2xl py-2 md:text-3xl dark:text-white mb-4'>Los Angeles, CA</p>
