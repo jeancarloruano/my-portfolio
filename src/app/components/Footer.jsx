@@ -1,5 +1,5 @@
-const footerClassName = 'pt-10 mt-10 pb-4 dark:text-white'
-const linkTextClassName = 'text-sm text-blue-600 underline dark:text-blue-400'
+const footerClassName = 'pt-10 mt-10 pb-4 text-xs sm:text-sm dark:text-white'
+const linkTextClassName = 'text-blue-600 underline dark:text-blue-400'
 
 export default function NavBar() {
   return (
