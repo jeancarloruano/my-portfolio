@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'xs': '360px',
+      // => @media (min-width: 640px) { ... }
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -20,7 +23,7 @@ module.exports = {
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1800px',
+      '2xl': '2000px',
       // => @media (min-width: 1800px) { ... }
     },
     extend: {

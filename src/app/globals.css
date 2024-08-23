@@ -6,6 +6,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+@layer base {
+  h1 {
+    @apply text-5xl py-2 text-cyan-500 font-medium md:text-6xl lg:text-7xl;
+  }
+}
+
 
 /* html,
 body {
