@@ -39,7 +39,7 @@ export default function Resume() {
 
                 <div className="mb-6 text-sm sm:text-base">
                     <div className="flex justify-between">
-                        <span className="font-bold">Altruist Financial</span>
+                        <span className="font-bold">Altruist</span>
                         <span className="font-bold">Feb. 2022 – Feb. 2024</span>
                     </div>
                     <div className="flex justify-between">
@@ -66,6 +66,10 @@ export default function Resume() {
                         <span className="font-bold">JP Morgan Chase & Co. Virtual Experience Program</span>
                         <span className="font-bold">Spring 2021</span>
                     </div>
+                    <div className="flex justify-between">
+                        <span className="italic mb-2">Virtual Experience Program Participant</span>
+                        <div className="italic mb-2">Remote</div>
+                    </div>
                     <ul className="list-disc list-inside md:ml-4 space-y-2">
                         <li>Established and configured the development environment by downloading essential Git repositories, files, tools, and dependencies.</li>
                         <li>Debugged and corrected issues in TypeScript files within the given repositories.</li>
@@ -78,7 +82,7 @@ export default function Resume() {
 
                 <div className="mb-6 text-sm sm:text-base">
                     <div className="flex justify-between">
-                        <span className="font-bold">California State University, Dominguez Hills</span>
+                        <span className="font-bold">CSU, Dominguez Hills</span>
                         <span className="font-bold">May 2021</span>
                     </div>
                     <div className="flex justify-between">
