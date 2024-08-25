@@ -3,17 +3,17 @@ import Image from 'next/image'
 import { BsThreeDotsVertical } from "react-icons/bs";
 import getConfig from '../../../next.config'
 import ProjectModal from './ProjectModal'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const h3Class = 'text-xl xs:text-2xl py-2 mt-20 dark:text-white'
 const pClass = 'text-sm xs:text-base py-5 leading-8 xs:leading-8 text-gray-800 dark:text-gray-200'
 const h4Class = 'text-base xs:text-lg lg:text-xl leading-8 xs:leading-8 lg:leading-8 py-2 text-gray-800 dark:text-gray-200'
 const spanClass = 'font-bold'
 const imageClass = 'rounded-lg'
-const portfolioImageClass = 'relative rounded-lg shadow-md outline-none shadow-gray-600 object-cover transition duration-100 ease-in-out outline hover:opacity-75 hover:outline-2 hover:outline-cyan-500 hover:scale-105 dark:shadow-lg dark:shadow-gray-950'
+const portfolioImageClass = 'relative rounded-lg shadow-md outline-none shadow-gray-600 object-cover transition duration-100 ease-in-out outline active:opacity-75 md:hover:opacity-75 active:outline-2 active:outline-cyan-500 md:hover:scale-105 dark:shadow-lg dark:shadow-gray-950'
 const portfoliosContainerClass = 'grid grid-cols-1 gap-8 py-10 lg:flex-row lg:flex-wrap lg:grid-cols-2'
 const portfolioImageContainerClass = 'relative basis-1/2 flex-1 text-center'
-const modalIconClass = 'absolute top-4 right-4 text-gray-100 z-20 text-xl xs:text-2xl transition duration-100 ease-in-out hover:text-cyan-500'
+const modalIconClass = 'absolute top-4 right-4 text-gray-100 z-20 text-xl xs:text-2xl transition duration-100 ease-in-out hover:text-cyan-500 md:active:text-cyan-600'
 const BASE_PATH = getConfig.basePath
 
 export default function Portfolio() {
@@ -26,6 +26,19 @@ export default function Portfolio() {
     const handleCloseModal = () => {
         setShowProjectModal(false)
     }
+
+    useEffect(() => {
+        if (showProjectModal) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = 'auto';
+        }
+    
+        // Cleanup when the component unmounts or modal closes
+        return () => {
+          document.body.style.overflow = 'auto';
+        };
+      }, [showProjectModal]);
 
     return (
         <section>
