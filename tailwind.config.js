@@ -41,7 +41,7 @@ module.exports = {
       },
       animation: {
         'bounce-fade': 'bounce-fade 0.75s ease-in-out',
-        'scroll-from-bottom': 'scroll-from-bottom 0.5s ease-in-out',
+        'scroll-from-bottom': 'scroll-from-bottom 0.75s ease-out',
       },
       keyframes: {
         'bounce-fade': {
