@@ -41,7 +41,7 @@ module.exports = {
       },
       animation: {
         'bounce-fade': 'bounce-fade 0.75s ease-in-out',
-        'scroll-from-bottom': 'scroll-from-bottom 0.75s ease-out',
+        'scroll-from-bottom': 'scroll-from-bottom 0.15s linear',
       },
       keyframes: {
         'bounce-fade': {
@@ -52,9 +52,10 @@ module.exports = {
         },
         'scroll-from-bottom': {
           '0%': { transform: 'translateY(800px)' },
-          '50%, 100%': { transform: 'translateY(0)' },
-          '25%': { transform: 'translateY(-100px)' },
-          '75%': { transform: 'translateY(-50px)'},
+          '25%': { transform: 'translateY(600px)' },
+          '50%': { transform: 'translateY(300px)'},
+          '75%': { transform: 'translateY(150px)'},
+          '100%': { transform: 'translateY(0)' },
         },
       },
     },
