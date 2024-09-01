@@ -3,7 +3,6 @@ import Image from 'next/image'
 import getConfig from '../../../next.config'
 
 const titleContainer = 'text-center p10'
-const titleDesc = 'text-sm xs:text-base md:text-xl py-5 leading-8 xs:leading-8 md:leading-8 text-gray-800 max-w-lg mx-auto dark:text-gray-200'
 const mediaNavContainer = 'flex justify-center gap-8 xs:gap-10 md:gap-16 py-3 text-gray-600 text-3xl xs:text-4xl md:text-5xl dark:text-gray-400'
 const mediaIcon = 'transition duration-100 ease-in-out hover:text-cyan-500 hover:scale-105 md:active:text-cyan-600'
 const authorImageContainer = 'relative mx-auto bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full w-48 h-48 xs:w-60 xs:h-60 sm:w-80 sm:h-80 mt-20 overflow-hidden md:h-96 md:w-96 border-gray-600 border-4 shadow-md shadow-gray-600 dark:border-gray-400 dark:shadow-lg dark:shadow-gray-950'
@@ -15,9 +14,9 @@ export default function Introduction({contactFormRef}) {
   return (
     <header id='site-title'>
       <div id='title-container' className={titleContainer}>
-        <h1>Jeancarlo Ruano</h1>
-        <h2>Developer and software tester</h2>
-        <p id='title-description' className={titleDesc}>Providing services for programming and test automation.
+        <h1 id='author-name'>Jeancarlo Ruano</h1>
+        <h2 id='author-title'>Developer and software tester</h2>
+        <p id='header-description' className='header-description'>Providing services for programming and test automation.
           Reach out below, and let&apos;s make some magic happen!
         </p>
       </div>

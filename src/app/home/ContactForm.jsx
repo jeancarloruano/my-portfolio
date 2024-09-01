@@ -15,6 +15,23 @@ const BASE_PATH = getConfig.basePath
 
 const ContactForm = forwardRef((props, ref) => {
 
+    const handleSubmit = (e) => {
+        // Prevent the browser from reloading on submit
+        e.preventDefault()
+
+        // Read the form data
+        const form = e.target
+        const formData = new FormData(form)
+
+        // Create JSON object from form data
+        const formJson = Object.fromEntries(formData.entries())
+        console.log('Form submitted', formJson)
+        alert('DEMO: Message sent successfully!')
+
+        // Clear form
+        e.target.reset()
+    }
+
     return (
         <section ref={ref} id='contact-section' className={contactSectionContainerClass}>
             <div className={h3ContainerClass}>
@@ -30,31 +47,34 @@ const ContactForm = forwardRef((props, ref) => {
                         priority
                     />
                 </div>
-                <form className={formClass}>
+                <form className={formClass} method='post' onSubmit={handleSubmit}>
                     <input className={inputClass}
-                        type='text' 
+                        type='text'
                         placeholder='Name'
                         name='user_name'
-                        required 
+                        maxLength='50'
+                        required
                     />
                     <input className={inputClass}
-                        type='text' 
+                        type='email'
                         placeholder='Email'
                         name='user_email'
-                        required 
+                        required
                     />
                     <input className={inputClass}
                         type='text'
                         placeholder='Subject'
-                        name='subject'
-                        required 
+                        name='email_subject'
+                        required
                     />
                     <textarea className={textareaClass}
-                        name='message'
+                        name='email_body'
                         cols='30'
                         rows='10'
-                        placeholder='Body'>
-                    </textarea>
+                        placeholder='Body'
+                        required
+                    />
+                    <p className='text-xs sm:text-sm text-red-600 pb-4'><strong>Note: </strong>This feature is still under development. Currently, submitting the form by clicking "Send" is non-functional and is intended for demonstration purposes only.</p>
                     <button className={contactButtonClass} type='submit'>Send</button>
                 </form>
             </div>

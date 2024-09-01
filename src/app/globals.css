@@ -13,6 +13,9 @@
   h2 {
     @apply py-2 text-xl xs:text-2xl md:text-3xl text-black dark:text-white;
   }
+  .header-description {
+    @apply text-sm xs:text-base md:text-xl py-5 leading-8 xs:leading-8 md:leading-8 text-gray-800 max-w-lg mx-auto dark:text-gray-200;
+  }
   .resume-details-h3 {
     @apply text-xl xs:text-2xl py-2 md:text-3xl dark:text-white font-semibold mb-2 border-b border-gray-800 dark:border-gray-200 pb-1;
   }
