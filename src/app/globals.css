@@ -11,6 +11,24 @@
     @apply py-2 text-5xl md:text-6xl lg:text-7xl font-medium text-cyan-500;
   }
   h2 {
-    @apply py-2 text-xl xs:text-2xl md:text-3xl text-black dark:text-white
+    @apply py-2 text-xl xs:text-2xl md:text-3xl text-black dark:text-white;
+  }
+  .resume-details-h3 {
+    @apply text-xl xs:text-2xl py-2 md:text-3xl dark:text-white font-semibold mb-2 border-b border-gray-800 dark:border-gray-200 pb-1;
+  }
+  .resume-details-container {
+    @apply mb-6 text-sm sm:text-base;
+  }
+  .resume-details-header {
+    @apply flex justify-between;
+  }
+  .resume-details-list {
+    @apply list-disc list-inside md:ml-4 space-y-2;
+  }
+  .resume-details-header-title {
+    @apply font-bold;
+  }
+  .resume-details-header-subtitle {
+    @apply italic mb-2;
   }
 }
