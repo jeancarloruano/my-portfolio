@@ -74,7 +74,7 @@ const ContactForm = forwardRef((props, ref) => {
                         placeholder='Body'
                         required
                     />
-                    <p className='text-xs sm:text-sm text-red-600 pb-4'><strong>Note: </strong>This feature is still under development. Currently, submitting the form by clicking "Send" is non-functional and is intended for demonstration purposes only.</p>
+                    <p className='text-xs sm:text-sm text-red-600 pb-4'><strong>Note: </strong>This feature is still under development. Currently, submitting the form by clicking &ldquo;Send&ldquo; is non-functional and is intended for demonstration purposes only.</p>
                     <button className={contactButtonClass} type='submit'>Send</button>
                 </form>
             </div>
