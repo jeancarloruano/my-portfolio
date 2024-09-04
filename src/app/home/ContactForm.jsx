@@ -26,7 +26,7 @@ const ContactForm = forwardRef((props, ref) => {
         // Create JSON object from form data
         const formJson = Object.fromEntries(formData.entries())
         console.log('Form submitted', formJson)
-        alert('DEMO: Message sent successfully!')
+        alert('DEMO: Message sent successfully!\n\nName: ' + formJson.user_name + '\nEmail: ' + formJson.user_email + '\nSubject: ' + formJson.email_subject)
 
         // Clear form
         e.target.reset()
