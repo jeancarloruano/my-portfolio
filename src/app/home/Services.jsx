@@ -89,7 +89,7 @@ export default function Services() {
             <ul>
               <li className={serviceCardListClass}>Playwright</li>
               <li className={serviceCardListClass}>Selenium</li>
-              <li className={serviceCardListClass}>TestNG</li>
+              <li className={serviceCardListClass}>Cypress</li>
             </ul>
         </div>
       </div>

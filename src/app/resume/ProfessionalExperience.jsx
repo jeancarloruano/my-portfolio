@@ -28,7 +28,7 @@ export default function ProfessionalExperience() {
                     <span className='resume-details-header-title'>Feb. 2022 – Feb. 2024</span>
                 </div>
                 <div id='altruist-details-subtitle' className='resume-details-header'>
-                    <span className='resume-details-header-subtitle'>QA Engineer (Contract)</span>
+                    <span className='resume-details-header-subtitle'>Software QA Engineer (Contract)</span>
                     <span className='resume-details-header-subtitle'>Culver City, CA</span>
                 </div>
                 <ul id='altruits-details-list' className='resume-details-list'>
