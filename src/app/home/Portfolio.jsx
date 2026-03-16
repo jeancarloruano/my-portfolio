@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -43,15 +45,11 @@ export default function Portfolio() {
       }, [showProjectModal]);
 
     return (
-        <section>
+        <section id="portfolio-section">
             <div>
-                <h3 className={h3Class}>My Projects</h3>
-                <p className={pClass}>
+                <h2 id="my-projects-title">My Projects</h2>
+                <p id="my-projects-description" className={pClass}>
                     Take a peek at some of the projects I&apos;ve been working on! In them, I blend a variety of cool technologies to create robust, user-friendly, and efficient web development and automation solutions.
-                </p>
-
-                <p className={pClass}>
-                    Wondering how this website came to be? It was crafted using React, NextJS, and Tailwind CSS. Huge thanks to <Link href="https://youtu.be/k-Pi5ZMxHWY?si=zKnT1EjmQfDyVZMv" target="_blank" className="text-teal-500 font-bold transform transition-transform duration-300 hover:text-white hover:scale-105">developedbyed</Link> for the awesome tutorial that sparked the inspiration! Don&apos;t forget to check out and support his channel!
                 </p>
                 <p className={pDisclaimerClass}>
                     <span className={spanClass}>Note: </span>Currently, this website serves as a technology demonstration to highlight my knowledge in web development and various programming technologies. While I plan to use it as my portfolio, please be aware that certain sections, such as &quot;My Projects&quot; and &quot;Contact Me,&quot; are still under development.

@@ -1,16 +1,24 @@
+'use client'
+
 import { forwardRef } from 'react'
 import Image from 'next/image'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import getConfig from '../../../next.config'
 
-const contactSectionContainerClass = 'container mx-auto px-4'
-const h3ContainerClass = 'text-center'
-const h3Class = 'text-xl xs:text-2xl pt-2 md:text-3xl dark:text-white'
+const contactSectionContainerClass = 'pt-0 pb-10 sm:pb-12'
+const h2ContainerClass = 'flex flex-wrap items-center justify-between gap-3'
+const socialContainerClass =
+  'flex items-center gap-4 text-2xl text-gray-600 dark:text-gray-400'
+const socialIconClass =
+  'transition duration-100 ease-in-out hover:text-cyan-500 hover:scale-105 md:active:text-cyan-600'
 const inputClass = 'text-sm xs:text-base bg-gray-200 appearance-none border-none rounded-lg w-full py-2 px-4 text-gray-800 leading-tight xs:leading-tight shadow-inner-light dark:shadow-inner-dark focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600 mb-4'
 const textareaClass = 'text-sm xs:text-base bg-gray-200 appearance-none border-none rounded-lg w-full resize-none py-2 px-4 text-gray-800 leading-tight xs:leading-tight shadow-inner-light dark:shadow-inner-dark focus:outline-none focus:bg-white focus:border-cyan-500 dark:bg-gray-600 dark:border-gray-600 mb-4'
-const imageContainerClass = 'relative flex justify-center items-center w-48 h-48 xs:w-52 xs:h-52 sm:w-60 sm:h-60 md:w-80 md:h-80 mx-auto mb-4 drop-shadow-lg'
+const imageContainerClass =
+  'relative shrink-0 flex justify-center items-center w-48 h-48 xs:w-52 xs:h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 mx-auto lg:mx-0 mb-4 lg:mb-0 drop-shadow-lg'
 const contactButtonClass = 'text-sm xs:text-base bg-cyan-500 md:hover:bg-cyan-600 active:bg-cyan-600 text-gray-100 px-4 py-2 rounded-xl shadow-inner-light-bezel focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 focus:shadow-inner-light border border-none transition duration-200 ease-in-out dark:shadow-inner-dark-bezel dark:active:shadow-inner-dark'
-const formContainerClass = 'flex flex-col items-center'
-const formClass = 'grid place-items-center w-full md:max-w-3xl mx-auto mt-4'
+const formContainerClass =
+  'mt-6 flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-12 justify-center rounded-2xl bg-white/80 dark:bg-gray-900/60 border border-gray-200/70 dark:border-gray-800/80 shadow-sm dark:shadow-lg dark:shadow-gray-950 px-4 sm:px-6 md:px-10 py-6 sm:py-8'
+const formClass = 'w-full md:max-w-3xl lg:max-w-xl'
 const BASE_PATH = getConfig.basePath
 
 const ContactForm = forwardRef((props, ref) => {
@@ -34,8 +42,26 @@ const ContactForm = forwardRef((props, ref) => {
 
     return (
         <section ref={ref} id='contact-section' className={contactSectionContainerClass}>
-            <div className={h3ContainerClass}>
-                <h3 className={h3Class}>Contact Me</h3>
+            <div className={h2ContainerClass}>
+                <h2 id="contact-me-title">Contact Me</h2>
+                <div className={socialContainerClass}>
+                    <a
+                        href='https://www.linkedin.com/in/jeancarloruano/'
+                        target='_blank'
+                        rel='noreferrer'
+                        aria-label='LinkedIn profile'
+                    >
+                        <BsLinkedin className={socialIconClass} />
+                    </a>
+                    <a
+                        href='https://github.com/jeancarloruano'
+                        target='_blank'
+                        rel='noreferrer'
+                        aria-label='GitHub profile'
+                    >
+                        <BsGithub className={socialIconClass} />
+                    </a>
+                </div>
             </div>
             <div id='form-container' className={formContainerClass}>
                 <div className={imageContainerClass}>

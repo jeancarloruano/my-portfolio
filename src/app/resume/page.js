@@ -1,4 +1,3 @@
-import BackButton from './BackButton'
 import ResumeHeader from './ResumeHeader'
 import ProfessionalExperience from './ProfessionalExperience'
 import Internship from './Internship'
@@ -12,7 +11,6 @@ const resumeContent =
 export default function Resume() {
   return (
     <div id="resume-page" className={resumePageContainer}>
-      <BackButton />
       <main className={resumeContent}>
         <ResumeHeader />
         <div className="space-y-12 md:space-y-14">
