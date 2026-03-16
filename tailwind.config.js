@@ -41,9 +41,14 @@ module.exports = {
       },
       animation: {
         'bounce-fade': 'bounce-fade 0.75s ease-in-out',
-        'scroll-from-bottom': 'scroll-from-bottom 0.15s linear',
+        'scroll-from-bottom': 'scroll-from-bottom 0.35s cubic-bezier(0.16, 1, 0.3, 1)',
+        'modal-backdrop': 'modal-backdrop 0.25s ease-out',
       },
       keyframes: {
+        'modal-backdrop': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
         'bounce-fade': {
           '0%': { transform: 'translateY(100px)' },
           '50%, 100%': { transform: 'translateY(0)' },
@@ -51,11 +56,14 @@ module.exports = {
           '75%': { transform: 'translateY(-15px)'},
         },
         'scroll-from-bottom': {
-          '0%': { transform: 'translateY(800px)' },
-          '25%': { transform: 'translateY(600px)' },
-          '50%': { transform: 'translateY(300px)'},
-          '75%': { transform: 'translateY(150px)'},
-          '100%': { transform: 'translateY(0)' },
+          '0%': {
+            transform: 'translateY(24px) scale(0.96)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateY(0) scale(1)',
+            opacity: '1',
+          },
         },
       },
     },
