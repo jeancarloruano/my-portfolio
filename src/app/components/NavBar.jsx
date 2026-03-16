@@ -3,8 +3,6 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import getConfig from '../../../next.config'
-
 const navContainer =
   'fixed top-0 left-1/2 z-40 w-full max-w-[2560px] -translate-x-1/2 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-[240px]'
 const navInner =
@@ -34,7 +32,6 @@ const navItems = [
 
 export default function NavBar() {
   const pathname = usePathname()
-  const BASE_PATH = getConfig.basePath
   const [isOpen, setIsOpen] = useState(false)
 
   const isActive = (href) => pathname === href
@@ -70,14 +67,14 @@ export default function NavBar() {
               </Link>
             ))}
             <Link
-              href={BASE_PATH + '/resume'}
+              href="/resume"
               className={linkBase}
             >
               <span className="relative inline-flex flex-col items-start">
                 <span>Resume</span>
                 <span
                   className={`${activeUnderline} origin-left transform transition-transform duration-150 ${
-                    pathname === BASE_PATH + '/resume'
+                    pathname === '/resume'
                       ? 'scale-x-100'
                       : 'scale-x-0 group-hover:scale-x-100'
                   }`}
@@ -112,7 +109,7 @@ export default function NavBar() {
               </Link>
             ))}
             <Link
-              href={BASE_PATH + '/resume'}
+              href="/resume"
               className={mobileLink}
               onClick={handleNavigate}
             >
