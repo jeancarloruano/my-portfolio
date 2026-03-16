@@ -6,7 +6,7 @@ import { useState } from 'react'
 const navContainer =
   'fixed top-0 left-1/2 z-40 w-full max-w-[2560px] -translate-x-1/2 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-[240px]'
 const navInner =
-  'mt-3 md:mt-4 rounded-2xl bg-gray-200/70 dark:bg-gray-900/70 backdrop-blur border border-gray-300/80 dark:border-gray-700/80 shadow-sm dark:shadow-lg dark:shadow-gray-950'
+  'mt-3 md:mt-4 rounded-2xl bg-gray-200/70 dark:bg-gray-900/70 backdrop-blur border border-gray-300/80 dark:border-gray-700/80 shadow-md dark:shadow-gray-950'
 const navContent =
   'flex items-center justify-between px-4 sm:px-6 py-2.5 text-sm sm:text-base text-gray-800 dark:text-gray-100'
 const brand =
