@@ -15,8 +15,8 @@ export default function Introduction({contactFormRef}) {
     <header id='site-title'>
       <div id='title-container' className={titleContainer}>
         <h1 id='author-name'>Jeancarlo Ruano</h1>
-        <h2 id='author-title'>Developer and software tester</h2>
-        <p id='header-description' className='header-description'>Providing services for programming and test automation.
+        <h2 id='author-title'>Web Developer | QA Engineer</h2>
+        <p id='header-description' className='header-description'>Providing services for web development and test automation.
           Reach out below, and let&apos;s make some magic happen!
         </p>
       </div>

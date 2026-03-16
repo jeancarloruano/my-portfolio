@@ -4,9 +4,11 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import getConfig from '../../../next.config'
 import ProjectModal from './ProjectModal'
 import { useState, useEffect } from 'react'
+import FadeInSection from '../components/FadeInSection'
 
 const h3Class = 'text-xl xs:text-2xl py-2 mt-20 dark:text-white'
 const pClass = 'text-sm xs:text-base py-5 leading-8 xs:leading-8 text-gray-800 dark:text-gray-200'
+const pDisclaimerClass = 'text-sm italic xs:text-base py-5 leading-8 xs:leading-8 text-gray-800 dark:text-gray-200'
 const h4Class = 'text-base xs:text-lg lg:text-xl leading-8 xs:leading-8 lg:leading-8 py-2 text-gray-800 dark:text-gray-200'
 const spanClass = 'font-bold'
 const imageClass = 'rounded-lg'
@@ -51,12 +53,12 @@ export default function Portfolio() {
                 <p className={pClass}>
                     Wondering how this website came to be? It was crafted using React, NextJS, and Tailwind CSS. Huge thanks to <Link href="https://youtu.be/k-Pi5ZMxHWY?si=zKnT1EjmQfDyVZMv" target="_blank" className="text-teal-500 font-bold transform transition-transform duration-300 hover:text-white hover:scale-105">developedbyed</Link> for the awesome tutorial that sparked the inspiration! Don&apos;t forget to check out and support his channel!
                 </p>
-                <p className={pClass}>
+                <p className={pDisclaimerClass}>
                     <span className={spanClass}>Note: </span>Currently, this website serves as a technology demonstration to highlight my knowledge in web development and various programming technologies. While I plan to use it as my portfolio, please be aware that certain sections, such as &quot;My Projects&quot; and &quot;Contact Me,&quot; are still under development.
                 </p>
             </div>
             <div className={portfoliosContainerClass}>
-                <div className={portfolioImageContainerClass}>
+                <FadeInSection className={portfolioImageContainerClass}>
                     <h4 className={h4Class}>Academic Planner</h4>
                     <div className={portfolioImageClass} onClick={handleClickPortfolio}>
                         <BsThreeDotsVertical className={modalIconClass} />
@@ -69,8 +71,8 @@ export default function Portfolio() {
                             priority
                         />
                     </div>
-                </div>
-                <div className={portfolioImageContainerClass}>
+                </FadeInSection>
+                <FadeInSection className={portfolioImageContainerClass}>
                     <h4 className={h4Class}>Mobile Puzzle Game</h4>
                     <div className={portfolioImageClass} onClick={handleClickPortfolio}>
                         <BsThreeDotsVertical className={modalIconClass} />
@@ -83,8 +85,8 @@ export default function Portfolio() {
                             priority
                         />
                     </div>
-                </div>
-                <div className={portfolioImageContainerClass}>
+                </FadeInSection>
+                <FadeInSection className={portfolioImageContainerClass}>
                     <h4 className={h4Class}>Web Automation Framework</h4>
                     <div className={portfolioImageClass} onClick={handleClickPortfolio}>
                         <BsThreeDotsVertical className={modalIconClass} />
@@ -97,8 +99,8 @@ export default function Portfolio() {
                             priority
                         />
                     </div>
-                </div>
-                <div className={portfolioImageContainerClass}>
+                </FadeInSection>
+                <FadeInSection className={portfolioImageContainerClass}>
                     <h4 className={h4Class}>API Automation Framework</h4>
                     <div className={portfolioImageClass} onClick={handleClickPortfolio}>
                         <BsThreeDotsVertical className={modalIconClass} />
@@ -111,7 +113,7 @@ export default function Portfolio() {
                             priority
                         />
                     </div>
-                </div>
+                </FadeInSection>
             </div>
             {showProjectModal && <ProjectModal onClose={handleCloseModal}/>}
         </section>

@@ -16,22 +16,31 @@
   .header-description {
     @apply text-sm xs:text-base md:text-xl py-5 leading-8 xs:leading-8 md:leading-8 text-gray-800 max-w-lg mx-auto dark:text-gray-200;
   }
+  .resume-section-title {
+    @apply text-xl xs:text-2xl py-2 dark:text-white font-semibold mb-4;
+  }
+  .resume-card {
+    @apply rounded-xl bg-gray-200 shadow-md shadow-gray-600 px-4 py-5 xs:py-8 md:p-8 dark:bg-gray-700 dark:shadow-lg dark:shadow-gray-950;
+  }
+  .resume-card + .resume-card {
+    @apply mt-4;
+  }
   .resume-details-h3 {
     @apply text-xl xs:text-2xl py-2 md:text-3xl dark:text-white font-semibold mb-2 border-b border-gray-800 dark:border-gray-200 pb-1;
   }
   .resume-details-container {
-    @apply mb-6 text-sm sm:text-base;
+    @apply text-sm sm:text-base;
   }
   .resume-details-header {
-    @apply flex justify-between;
+    @apply flex flex-wrap justify-between items-baseline gap-2;
   }
   .resume-details-list {
-    @apply list-disc list-inside md:ml-4 space-y-2;
+    @apply list-disc list-outside ml-4 md:ml-5 space-y-2 text-gray-800 dark:text-gray-200 leading-relaxed;
   }
   .resume-details-header-title {
-    @apply font-bold;
+    @apply font-bold text-gray-800 dark:text-white;
   }
   .resume-details-header-subtitle {
-    @apply italic mb-2;
+    @apply text-gray-600 dark:text-gray-300 text-sm;
   }
 }

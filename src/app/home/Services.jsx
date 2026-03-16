@@ -1,6 +1,9 @@
+'use client'
+
 import Image from 'next/image'
 import getConfig from '../../../next.config'
 import Link from 'next/link'
+import FadeInSection from '../components/FadeInSection'
 
 const h3Class = 'text-xl xs:text-2xl py-2 mt-20 dark:text-white'
 const pClass = 'text-sm xs:text-base py-5 leading-8 xs:leading-8 text-gray-800 dark:text-gray-200'
@@ -22,7 +25,7 @@ export default function Services() {
       <div id='services-description'>
          <h3 className={h3Class}>About me</h3>
          <p className={pClass}>With a solid academic foundation and over 
-            <span className={spanClass}> 3 years </span> 
+            <span className={spanClass}> 4 years </span> 
             of hands-on experience as a QA engineer, I bring a unique blend of technical expertise and
             <span className={spanClass}> quality-driven mindset </span>to the field of web development. 
          </p>
@@ -35,7 +38,7 @@ export default function Services() {
          </p>
       </div>
       <div id='service-card-container' className={serviceCardContainerClass}>
-        <div className={serviceCardClass}>
+        <FadeInSection className={serviceCardClass}>
             <Image className={`-mr-6 mt-4 ${imageClass}`}
             src={BASE_PATH + '/web-development-icon.png'}
             alt='Web development icon'
@@ -53,8 +56,8 @@ export default function Services() {
               <li className={serviceCardListClass}>HTML</li>
               <li className={serviceCardListClass}>CSS</li>
             </ul>
-        </div>
-        <div className={serviceCardClass}>
+        </FadeInSection>
+        <FadeInSection className={serviceCardClass}>
             <Image className={imageClass}
             src={BASE_PATH + '/programming-icon.png'}
             alt='Programming icon'
@@ -72,8 +75,8 @@ export default function Services() {
               <li className={serviceCardListClass}>Python</li>
               <li className={serviceCardListClass}>Java</li>
             </ul>
-        </div>
-        <div className={serviceCardClass}>
+        </FadeInSection>
+        <FadeInSection className={serviceCardClass}>
             <Image className={`-ml-8 ${imageClass}`}
             src={BASE_PATH + '/automation-icon.png'}
             alt='Automation icon'
@@ -91,7 +94,7 @@ export default function Services() {
               <li className={serviceCardListClass}>Selenium</li>
               <li className={serviceCardListClass}>Cypress</li>
             </ul>
-        </div>
+        </FadeInSection>
       </div>
     </section>
   )
