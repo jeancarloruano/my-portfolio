@@ -10,7 +10,7 @@ const bodyClass = 'min-h-screen max-w-[2560px] mx-auto bg-gray-100 px-5 sm:px-10
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body id="body" className={bodyClass}>         
           <Providers>{children}</Providers>
       </body>     
