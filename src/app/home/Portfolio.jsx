@@ -8,7 +8,6 @@ import ProjectModal from './ProjectModal'
 import { useState, useEffect } from 'react'
 import FadeInSection from '../components/FadeInSection'
 
-const h3Class = 'text-xl xs:text-2xl py-2 mt-20 dark:text-white'
 const pClass = 'text-sm xs:text-base py-5 leading-8 xs:leading-8 text-gray-800 dark:text-gray-200'
 const pDisclaimerClass = 'text-sm italic xs:text-base py-5 leading-8 xs:leading-8 text-gray-800 dark:text-gray-200'
 const h4Class = 'text-base xs:text-lg lg:text-xl leading-8 xs:leading-8 lg:leading-8 py-2 text-gray-800 dark:text-gray-200'
@@ -46,14 +45,27 @@ export default function Portfolio() {
 
     return (
         <section id="portfolio-section">
-            <div>
-                <h2 id="my-projects-title">My Projects</h2>
-                <p id="my-projects-description" className={pClass}>
-                    Take a peek at some of the projects I&apos;ve been working on! In them, I blend a variety of cool technologies to create robust, user-friendly, and efficient web development and automation solutions.
-                </p>
-                <p className={pDisclaimerClass}>
-                    <span className={spanClass}>Note: </span>Currently, this website serves as a technology demonstration to highlight my knowledge in web development and various programming technologies. While I plan to use it as my portfolio, please be aware that certain sections, such as &quot;My Projects&quot; and &quot;Contact Me,&quot; are still under development.
-                </p>
+            <div className="flex flex-col xl:flex-row xl:items-start xl:gap-10 2xl:gap-12">
+                <div className="contents xl:block xl:flex-1 xl:min-w-0">
+                    <h2 id="my-projects-title" className="order-1">My Projects</h2>
+                    <div className="order-3">
+                        <p id="my-projects-description" className={pClass}>
+                            Take a peek at some of the projects I&apos;ve been working on! In them, I blend a variety of cool technologies to create robust, user-friendly, and efficient web development and automation solutions.
+                        </p>
+                        <p className={pDisclaimerClass}>
+                            <span className={spanClass}>Note: </span>Currently, this website serves as a technology demonstration to highlight my knowledge in web development and various programming technologies. While I plan to use it as my portfolio, please be aware that certain sections, such as &quot;My Projects&quot; and &quot;Contact Me,&quot; are still under development.
+                        </p>
+                    </div>
+                </div>
+                <div className="order-2 flex-shrink-0 w-full xl:w-[480px] 2xl:w-[600px] mt-4 mb-2 xl:mt-0 xl:mb-0">
+                    <Image
+                        src={BASE_PATH + '/projects-hero-programming.jpg'}
+                        alt="Programming and web development"
+                        width={640}
+                        height={480}
+                        className="rounded-xl shadow-md object-cover w-full h-52 sm:h-64 lg:h-80 xl:h-100 dark:shadow-gray-950"
+                    />
+                </div>
             </div>
             <div className={portfoliosContainerClass}>
                 <FadeInSection className={portfolioImageContainerClass}>

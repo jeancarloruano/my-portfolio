@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { BsBriefcaseFill } from 'react-icons/bs'
+
 const navContainer =
   'fixed top-0 left-1/2 z-40 w-full max-w-[2560px] -translate-x-1/2 px-5 sm:px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-[480px]'
 const navInner =
@@ -19,8 +21,10 @@ const activeUnderline =
   'absolute inset-x-0 -bottom-1 h-[2px] rounded-full bg-cyan-500 dark:bg-cyan-400'
 const mobileToggleButton =
   'md:hidden inline-flex items-center justify-center rounded-full p-1.5 text-2xl text-gray-700 dark:text-gray-200 hover:text-cyan-500 hover:bg-gray-200/70 dark:hover:bg-gray-800/80 transition-colors duration-150'
+const mobileMenuWrapper =
+  'grid transition-[grid-template-rows] duration-200 ease-out md:hidden'
 const mobileMenu =
-  'md:hidden border-t border-gray-200/60 dark:border-gray-700/80 px-4 sm:px-6 pb-3 text-sm sm:text-base'
+  'border-t border-gray-200/60 dark:border-gray-700/80 px-4 sm:px-6 pb-3 text-sm sm:text-base overflow-hidden transition-opacity duration-200'
 const mobileLink =
   'block w-full py-2 first:pt-3 last:pb-1 text-gray-800 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400'
 
@@ -43,9 +47,12 @@ export default function NavBar() {
     <nav className={navContainer} aria-label="Main navigation">
       <div className={navInner}>
         <div className={navContent}>
-          <Link href="/" className={brand} onClick={handleNavigate}>
-            My Portfolio
-          </Link>
+          <div className="flex items-center gap-2">
+            <BsBriefcaseFill className="text-xl" />
+            <Link href="/" className={brand} onClick={handleNavigate}>
+              My Portfolio
+            </Link>
+          </div>
           {/* Desktop links */}
           <div className={linksContainerDesktop}>
             {navItems.map(({ label, href }) => (
@@ -96,27 +103,33 @@ export default function NavBar() {
           </button>
         </div>
         {/* Mobile dropdown */}
-        {isOpen && (
-          <div className={mobileMenu}>
-            {navItems.map(({ label, href }) => (
+        <div
+          className={mobileMenuWrapper}
+          style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
+          aria-hidden={!isOpen}
+        >
+          <div className="min-h-0">
+            <div className={`${mobileMenu} ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
+              {navItems.map(({ label, href }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className={mobileLink}
+                  onClick={handleNavigate}
+                >
+                  {label}
+                </Link>
+              ))}
               <Link
-                key={href}
-                href={href}
+                href="/resume"
                 className={mobileLink}
                 onClick={handleNavigate}
               >
-                {label}
+                Resume
               </Link>
-            ))}
-            <Link
-              href="/resume"
-              className={mobileLink}
-              onClick={handleNavigate}
-            >
-              Resume
-            </Link>
+            </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   )
