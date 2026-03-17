@@ -47,12 +47,14 @@ export default function NavBar() {
     <nav className={navContainer} aria-label="Main navigation">
       <div className={navInner}>
         <div className={navContent}>
-          <div className="flex items-center gap-2">
+          <Link
+            href="/"
+            className={`${brand} inline-flex items-center gap-2 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-150`}
+            onClick={handleNavigate}
+          >
             <BsBriefcaseFill className="text-xl" />
-            <Link href="/" className={brand} onClick={handleNavigate}>
-              My Portfolio
-            </Link>
-          </div>
+            <span>My Portfolio</span>
+          </Link>
           {/* Desktop links */}
           <div className={linksContainerDesktop}>
             {navItems.map(({ label, href }) => (
