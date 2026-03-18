@@ -1,9 +1,9 @@
 'use client'
 
-import Image from 'next/image'
 import getConfig from '../../../next.config'
 import Link from 'next/link'
 import FadeInSection from '../components/FadeInSection'
+import LoadingImage from '../components/LoadingImage'
 
 const aboutLayoutClass =
   'mt-12 md:mt-16 flex flex-col lg:flex-row items-center lg:items-center gap-8 md:gap-16'
@@ -29,7 +29,8 @@ export default function Services() {
     <section id='services-container'>
       <div className={aboutLayoutClass}>
         <div className={authorImageContainer}>
-          <Image
+          <LoadingImage
+            containerClassName="w-full h-full rounded-full"
             className={authorImage}
             fill
             style={{ objectFit: 'cover' }}
@@ -57,7 +58,9 @@ export default function Services() {
       </div>
       <div id='service-card-container' className={serviceCardContainerClass}>
         <FadeInSection className={serviceCardClass}>
-            <Image className={`-mr-6 mt-4 ${imageClass}`}
+            <LoadingImage
+            containerClassName="-mr-6 mt-4"
+            className={imageClass}
             src={BASE_PATH + '/web-development-icon.png'}
             alt='Web development icon'
             width={130}
@@ -76,7 +79,8 @@ export default function Services() {
             </ul>
         </FadeInSection>
         <FadeInSection className={serviceCardClass}>
-            <Image className={imageClass}
+            <LoadingImage
+            className={imageClass}
             src={BASE_PATH + '/programming-icon.png'}
             alt='Programming icon'
             width={140}
@@ -95,7 +99,9 @@ export default function Services() {
             </ul>
         </FadeInSection>
         <FadeInSection className={serviceCardClass}>
-            <Image className={`-ml-8 ${imageClass}`}
+            <LoadingImage
+            containerClassName="-ml-8"
+            className={imageClass}
             src={BASE_PATH + '/automation-icon.png'}
             alt='Automation icon'
             width={140}

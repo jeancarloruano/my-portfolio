@@ -1,9 +1,9 @@
 'use client'
 
 import { forwardRef } from 'react'
-import Image from 'next/image'
 import { BsLinkedin, BsGithub, BsInstagram, BsFacebook, BsTwitterX } from 'react-icons/bs'
 import getConfig from '../../../next.config'
+import LoadingImage from '../components/LoadingImage'
 
 const contactSectionContainerClass = 'pt-0 pb-10 sm:pb-12'
 const h2ContainerClass = 'flex flex-wrap items-center justify-between gap-3'
@@ -89,7 +89,8 @@ const ContactForm = forwardRef((props, ref) => {
             </div>
             <div id='form-container' className={formContainerClass}>
                 <div className={imageContainerClass}>
-                    <Image
+                    <LoadingImage
+                        containerClassName="w-full h-full"
                         src={BASE_PATH + '/author-contact-memoji.PNG'}
                         alt='Memoji image of the author'
                         fill

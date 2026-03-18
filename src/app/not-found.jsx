@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import getConfig from '../../next.config'
+import LoadingImage from './components/LoadingImage'
 
 const mainClass = 'pt-14 flex flex-col items-center justify-start min-h-screen space-y-4 sm:space-y-10 px-4'
 const h3Class = 'text-xl xs:text-2xl py-5 md:text-3xl dark:text-white'
@@ -19,7 +19,8 @@ export default function NotFound() {
                 Sorry, but I couldn&apos;t find the page you were looking for.
             </p>
             <div className={imageContainerClass}>
-                <Image
+                <LoadingImage
+                    containerClassName="w-full h-full rounded-full"
                     fill
                     style={{ objectFit: 'cover' }}
                     src={BASE_PATH + '/author-404-memoji.PNG'}

@@ -1,12 +1,12 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { BsThreeDotsVertical } from "react-icons/bs";
 import getConfig from '../../../next.config'
 import ProjectModal from './ProjectModal'
 import { useState, useEffect } from 'react'
 import FadeInSection from '../components/FadeInSection'
+import LoadingImage from '../components/LoadingImage'
 
 const pClass = 'text-sm xs:text-base py-5 leading-8 xs:leading-8 text-gray-800 dark:text-gray-200'
 const pDisclaimerClass = 'text-sm italic xs:text-base py-5 leading-8 xs:leading-8 text-gray-800 dark:text-gray-200'
@@ -58,7 +58,8 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="order-2 flex-shrink-0 w-full xl:w-[480px] 2xl:w-[600px] mt-4 mb-2 xl:mt-0 xl:mb-0">
-                    <Image
+                    <LoadingImage
+                        containerClassName="w-full"
                         src={BASE_PATH + '/projects-hero-programming.jpg'}
                         alt="Programming and web development"
                         width={640}
@@ -72,7 +73,9 @@ export default function Portfolio() {
                     <h4 className={h4Class}>Academic Planner</h4>
                     <div className={portfolioImageClass} onClick={handleClickPortfolio}>
                         <BsThreeDotsVertical className={modalIconClass} />
-                        <Image className={imageClass}
+                        <LoadingImage
+                            containerClassName="w-full"
+                            className={imageClass}
                             src={BASE_PATH + '/designs-placeholder.jpeg'}
                             alt='Designs placeholder image'
                             width={2000}
@@ -86,7 +89,9 @@ export default function Portfolio() {
                     <h4 className={h4Class}>Mobile Puzzle Game</h4>
                     <div className={portfolioImageClass} onClick={handleClickPortfolio}>
                         <BsThreeDotsVertical className={modalIconClass} />
-                        <Image className={imageClass}
+                        <LoadingImage
+                            containerClassName="w-full"
+                            className={imageClass}
                             src={BASE_PATH + '/designs-placeholder.jpeg'}
                             alt='Designs placeholder image'
                             width={2000}
@@ -100,7 +105,9 @@ export default function Portfolio() {
                     <h4 className={h4Class}>Web Automation Framework</h4>
                     <div className={portfolioImageClass} onClick={handleClickPortfolio}>
                         <BsThreeDotsVertical className={modalIconClass} />
-                        <Image className={imageClass}
+                        <LoadingImage
+                            containerClassName="w-full"
+                            className={imageClass}
                             src={BASE_PATH + '/designs-placeholder.jpeg'}
                             alt='Designs placeholder image'
                             width={2000}
@@ -114,7 +121,9 @@ export default function Portfolio() {
                     <h4 className={h4Class}>API Automation Framework</h4>
                     <div className={portfolioImageClass} onClick={handleClickPortfolio}>
                         <BsThreeDotsVertical className={modalIconClass} />
-                        <Image className={imageClass}
+                        <LoadingImage
+                            containerClassName="w-full"
+                            className={imageClass}
                             src={BASE_PATH + '/designs-placeholder.jpeg'}
                             alt='Designs placeholder image'
                             width={2000}

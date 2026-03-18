@@ -6,6 +6,15 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+@keyframes loading-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 @layer base {
   html {
     scrollbar-gutter: stable;
