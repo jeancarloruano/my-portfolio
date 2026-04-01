@@ -26,6 +26,7 @@ export default function NotFound() {
                     src={BASE_PATH + '/author-404-memoji.PNG'}
                     alt='404 Memoji image of the author'
                     priority
+                    transparentBackground
                 />    
             </div>
             <p className={pClass}>

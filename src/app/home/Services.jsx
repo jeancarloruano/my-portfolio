@@ -37,6 +37,7 @@ export default function Services() {
             src={BASE_PATH + '/author-home-memoji.PNG'}
             alt='Memoji image of the author'
             priority
+            transparentBackground
           />
         </div>
         <div id='services-description' className="w-full">
@@ -65,7 +66,7 @@ export default function Services() {
             alt='Web development icon'
             width={130}
             height={130}
-            priority
+            transparentBackground
             />
             <h3 className={serviceCardH3Class}>Web Development</h3>
             <p className={serviceCardPClass}>
@@ -85,7 +86,7 @@ export default function Services() {
             alt='Programming icon'
             width={140}
             height={140}
-            priority
+            transparentBackground
             />
             <h3 className={serviceCardH3Class}>Programming</h3>
             <p className={serviceCardPClass}>
@@ -106,7 +107,7 @@ export default function Services() {
             alt='Automation icon'
             width={140}
             height={140}
-            priority
+            transparentBackground
             />
             <h3 className={serviceCardH3Class}>Automation</h3>
             <p className={serviceCardPClass}>

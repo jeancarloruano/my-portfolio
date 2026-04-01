@@ -96,6 +96,7 @@ const ContactForm = forwardRef((props, ref) => {
                         fill
                         style={{ objectFit: 'contain', objectPosition: 'center' }}
                         priority
+                        transparentBackground
                     />
                 </div>
                 <div className="w-full md:max-w-3xl lg:max-w-xl lg:flex-1 flex justify-center">

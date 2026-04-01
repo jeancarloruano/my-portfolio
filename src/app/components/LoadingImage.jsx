@@ -7,28 +7,43 @@ export default function LoadingImage({
   containerClassName = '',
   className = '',
   onLoadingComplete,
+  priority,
+  fetchPriority,
+  /** Skip rectangular shimmer so alpha doesn’t show a box around transparent PNGs */
+  transparentBackground = false,
   ...props
 }) {
   const [loaded, setLoaded] = useState(false)
   const [showSkeleton, setShowSkeleton] = useState(true)
 
   useEffect(() => {
+    if (transparentBackground) return
     if (!loaded) return
     const t = window.setTimeout(() => setShowSkeleton(false), 250)
     return () => window.clearTimeout(t)
-  }, [loaded])
+  }, [loaded, transparentBackground])
+
+  const imageClassName = [
+    className,
+    transparentBackground && 'transition-opacity duration-300',
+    transparentBackground && (loaded ? 'opacity-100' : 'opacity-0'),
+  ]
+    .filter(Boolean)
+    .join(' ')
 
   return (
     <div className={`relative inline-block ${containerClassName}`}>
       <Image
         {...props}
-        className={className}
+        priority={priority}
+        fetchPriority={fetchPriority ?? (priority ? 'high' : undefined)}
+        className={imageClassName}
         onLoadingComplete={(img) => {
           setLoaded(true)
           onLoadingComplete?.(img)
         }}
       />
-      {showSkeleton && (
+      {!transparentBackground && showSkeleton && (
         <div
           aria-hidden="true"
           className={[

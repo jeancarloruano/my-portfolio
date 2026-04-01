@@ -37,7 +37,7 @@ function ProjectModal({onClose}) {
                         style={{ objectFit: 'contain' }}
                         src={BASE_PATH + '/under-construction.png'}
                         alt='404 Memoji image of the author'
-                        priority
+                        transparentBackground
                     />    
                 </div>
                 <p className={pClass}>

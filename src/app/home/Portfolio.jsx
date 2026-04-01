@@ -65,6 +65,7 @@ export default function Portfolio() {
                         width={640}
                         height={480}
                         className="rounded-xl shadow-md object-cover w-full h-52 sm:h-64 lg:h-80 xl:h-100 dark:shadow-gray-950"
+                        priority
                     />
                 </div>
             </div>
@@ -81,7 +82,6 @@ export default function Portfolio() {
                             width={2000}
                             height={2000}
                             style={{ width: '100%', height: 'auto' }}
-                            priority
                         />
                     </div>
                 </FadeInSection>
@@ -97,7 +97,6 @@ export default function Portfolio() {
                             width={2000}
                             height={2000}
                             style={{ width: '100%', height: 'auto' }}
-                            priority
                         />
                     </div>
                 </FadeInSection>
@@ -113,7 +112,6 @@ export default function Portfolio() {
                             width={2000}
                             height={2000}
                             style={{ width: '100%', height: 'auto' }}
-                            priority
                         />
                     </div>
                 </FadeInSection>
@@ -129,7 +127,6 @@ export default function Portfolio() {
                             width={2000}
                             height={2000}
                             style={{ width: '100%', height: 'auto' }}
-                            priority
                         />
                     </div>
                 </FadeInSection>

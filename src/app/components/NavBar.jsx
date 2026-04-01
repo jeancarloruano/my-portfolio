@@ -2,11 +2,11 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { BsBriefcaseFill } from 'react-icons/bs'
 
 const navContainer =
-  'fixed top-0 left-1/2 z-40 w-full max-w-[2560px] -translate-x-1/2 px-5 sm:px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-[480px]'
+  'fixed top-0 left-1/2 z-40 w-full max-w-[2560px] -translate-x-1/2 px-5 sm:px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-[480px] transition-transform duration-200 ease-out will-change-transform'
 const navInner =
   'mt-3 md:mt-4 rounded-2xl bg-gray-200/70 dark:bg-gray-900/70 backdrop-blur border border-gray-300/80 dark:border-gray-700/80 shadow-md dark:shadow-gray-950'
 const navContent =
@@ -37,6 +37,44 @@ const navItems = [
 export default function NavBar() {
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
+  const [navVisible, setNavVisible] = useState(true)
+  const lastScrollY = useRef(0)
+  const isOpenRef = useRef(false)
+
+  isOpenRef.current = isOpen
+
+  useEffect(() => {
+    lastScrollY.current = window.scrollY
+  }, [])
+
+  useEffect(() => {
+    let ticking = false
+    const onScroll = () => {
+      if (ticking) return
+      ticking = true
+      requestAnimationFrame(() => {
+        ticking = false
+        const current = window.scrollY
+        const prev = lastScrollY.current
+        const menuOpen = isOpenRef.current
+
+        if (menuOpen) {
+          setNavVisible(true)
+        } else if (current < 24) {
+          setNavVisible(true)
+        } else if (current > prev + 4 && current > 64) {
+          setNavVisible(false)
+        } else if (current < prev - 4) {
+          setNavVisible(true)
+        }
+
+        lastScrollY.current = current
+      })
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   const isActive = (href) => pathname === href
 
@@ -44,7 +82,10 @@ export default function NavBar() {
   const handleNavigate = () => setIsOpen(false)
 
   return (
-    <nav className={navContainer} aria-label="Main navigation">
+    <nav
+      className={`${navContainer} ${navVisible ? 'translate-y-0' : '-translate-y-[calc(100%+1.25rem)]'}`}
+      aria-label="Main navigation"
+    >
       <div className={navInner}>
         <div className={navContent}>
           <Link
